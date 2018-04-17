@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html class="desktop-view not-mobile-device anon js no-touch discourse-no-touch" style="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <meta name="description" content="Demonstration sandbox for Discourse">
+    <meta name="discourse_theme_key" content="2dfa1e18-5ddb-48da-9f58-385d6af0da8c">
+    <meta name="discourse_current_homepage" content="latest">
+    <meta name="author" content="">
+<meta name="generator" content="Discourse 2.0.0.beta6 - https://github.com/discourse/discourse version 2585ada5ca368d88a4d11ab9a8f51d74961f8ae4">
+<link rel="icon" type="image/png" href="https://discourse-cdn.freetls.fastly.net/try/uploads/default/original/1X/6e1eae9393daef27038c567da08cb5bfdfcdc30a.png">
+<link rel="apple-touch-icon" type="image/png" href="https://discourse-cdn.freetls.fastly.net/try/uploads/default/original/1X/426f1eebdfa439fb21bdb77af27532f11c568e00.png">
+<link rel="icon" type="image/png" sizes="144x144" href="https://discourse-cdn.freetls.fastly.net/try/uploads/default/original/1X/426f1eebdfa439fb21bdb77af27532f11c568e00.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://try.discourse.org","potentialAction":{"@type":"SearchAction","target":"https://try.discourse.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="https://try.discourse.org/opensearch.xml" title="Demo Search">
+
+
+
+      <meta name="fragment" content="!">
+
+
+    <script>
+      window.EmberENV = window.EmberENV || {};
+      window.EmberENV['FORCE_JQUERY'] = true;
+    </script>
+
+    <link rel="preload" href="demo_files/en-57575d39a0dc40033bef8a67c1bef3fcae653e17834d7b46d3955b71e4.js" as="script">
+<script src="demo_files/en-57575d39a0dc40033bef8a67c1bef3fcae653e17834d7b46d3955b71e4.js"></script>
+    <link rel="preload" href="demo_files/ember_jquery-27e777857b8c0730dacfe09cb11711365d21a5db4f9ee0b8.js" as="script">
+<script src="demo_files/ember_jquery-27e777857b8c0730dacfe09cb11711365d21a5db4f9ee0b8.js"></script>
+    <link rel="preload" href="demo_files/preload-store-ec90ffab9d7a6d9e507dda7cf7343e9d50b8bce624f7f44.js" as="script">
+<script src="demo_files/preload-store-ec90ffab9d7a6d9e507dda7cf7343e9d50b8bce624f7f44.js"></script>
+    <link rel="preload" href="demo_files/vendor-20c2f328b5abb11fe184c1b75687e13d2b1ecc3ef8c7a3340da616.js" as="script">
+<script src="demo_files/vendor-20c2f328b5abb11fe184c1b75687e13d2b1ecc3ef8c7a3340da616.js"></script>
+    <link rel="preload" href="demo_files/pretty-text-bundle-cacf6e68fbea63bd19c98cb4c3e2c394c74ba69187.js" as="script">
+<script src="demo_files/pretty-text-bundle-cacf6e68fbea63bd19c98cb4c3e2c394c74ba69187.js"></script>
+    <link rel="preload" href="demo_files/application-54adbc51806521467884c3e9faedd6b6506bee273d20659cb.js" as="script">
+<script src="demo_files/application-54adbc51806521467884c3e9faedd6b6506bee273d20659cb.js"></script>
+    <link rel="preload" href="demo_files/plugin-f1fe546a9a2d9ae181900ff80529da3bc7bb5249c9d3dd546e6545.js" as="script">
+<script src="demo_files/plugin-f1fe546a9a2d9ae181900ff80529da3bc7bb5249c9d3dd546e6545.js"></script>
+    <link rel="preload" href="demo_files/plugin-third-party-4484697be5cb56a877d3f45e5407bceba303c50042.js" as="script">
+<script src="demo_files/plugin-third-party-4484697be5cb56a877d3f45e5407bceba303c50042.js"></script>
+
+
+
+
+
+
+    <link rel="manifest" href="https://try.discourse.org/manifest.json">
+
+
+      <link href="demo_files/desktop_7c04569fbc6546ddc9e057e1d09f60ad11b6e546.css" media="all" rel="stylesheet" data-target="desktop">
+
+
+  <link href="demo_files/desktop_theme_5_52b5655c2f893ce9b479838bf6126b33f08fdbf6.css" media="all" rel="stylesheet" data-target="desktop_theme">
+
+
+
+<link rel="preload" href="https://discourse-cdn.freetls.fastly.net/try/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2?https://try.discourse.org&amp;2&amp;v=4.7.0" as="font" type="font/woff2" crossorigin="">
+<style>
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('https://discourse-cdn.freetls.fastly.net/try/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2?https://try.discourse.org&2&v=4.7.0') format('woff2'),
+         url('https://discourse-cdn.freetls.fastly.net/try/assets/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff?https://try.discourse.org&amp;2&v=4.7.0') format('woff');
+  }
+</style>
+
+
+        <link rel="next" href="https://try.discourse.org/latest?no_definitions=true&amp;no_subcategories=false&amp;page=1">
+    <link rel="alternate" type="application/rss+xml" title="Latest posts" href="https://try.discourse.org/posts.rss">
+    <link rel="alternate" type="application/rss+xml" title="Latest topics" href="https://try.discourse.org/latest.rss">
+    <meta property="og:site_name" content="Demo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://discourse-cdn.freetls.fastly.net/try/uploads/default/original/1X/426f1eebdfa439fb21bdb77af27532f11c568e00.png">
+<meta property="og:image" content="https://discourse-cdn.freetls.fastly.net/try/uploads/default/original/1X/426f1eebdfa439fb21bdb77af27532f11c568e00.png">
+<meta property="og:url" content="https://try.discourse.org/">
+<meta name="twitter:url" content="https://try.discourse.org/">
+<meta property="og:title" content="Demo">
+<meta name="twitter:title" content="Demo">
+<meta property="og:description" content="Demonstration sandbox for Discourse">
+<meta name="twitter:description" content="Demonstration sandbox for Discourse">
+
+
+
+  <style id="image-sizing-hack">#reply-control .d-editor-preview img:not(.thumbnail), .cooked img:not(.thumbnail) {max-width:690px;max-height:500px;}</style></head>
+
+  <body class="navigation-topics">
+
+
+
+      <nav id="bar">
+  <div id="logo">
+    <a href="https://www.discourse.org/">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384.46 103.81">
+        <defs>
+          <style>
+
+.cls-1{fill:#231f20;}.cls-2{fill:#f2e88f;}.cls-3{fill:#00aeef;}.cls-4{fill:#00953a;}.cls-5{fill:#e63c2f;}.cls-6{fill:#d13239;}
+
+          </style>
+        </defs>
+        <title>Demo</title>
+        <g id="Layer_2" data-name="Layer 2">
+          <g id="Layer_1-2" data-name="Layer 1">
+            <path class="discourse-path" d="M117.4 22.22a5.92 5.92 0 0 1 4.37 1.84 6.13 6.13 0 0 1 1.82 4.47 6.06 6.06 0 0 1-1.8 4.42 5.85 5.85 0 0 1-4.31 1.83 5.94 5.94 0 0 1-4.4-1.86 6.23 6.23 0 0 1-1.82-4.52 6.17 6.17 0 0 1 6.15-6.17zm-4.84 21.05h9.68v40.36h-9.68zM154.66 49.66l-6 6Q145 52 142 52a4.17 4.17 0 0 0-2.55.69 2.08 2.08 0 0 0-.92 1.72 2.11 2.11 0 0 0 .58 1.44 10.89 10.89 0 0 0 2.89 1.82l3.55 1.77q5.6 2.77 7.7 5.64a11.74 11.74 0 0 1-1.68 15.32q-3.78 3.44-10.13 3.44A16.1 16.1 0 0 1 128 77.25l6-6.49a13.79 13.79 0 0 0 4 3.21 8.84 8.84 0 0 0 4 1.23 4.84 4.84 0 0 0 3.09-.92 2.67 2.67 0 0 0 1.17-2.13q0-2.24-4.22-4.36l-3.26-1.63q-9.36-4.72-9.36-11.81a10.25 10.25 0 0 1 3.53-7.82 12.81 12.81 0 0 1 9-3.25 15.66 15.66 0 0 1 12.7 6.38zM199.76 52.07l-8.06 4.43a13.69 13.69 0 0 0-4.49-3.3 13.51 13.51 0 0 0-5.2-.92 12.12 12.12 0 0 0-8.79 3.24 11 11 0 0 0-3.36 8.3 10.67 10.67 0 0 0 3.23 8 11.71 11.71 0 0 0 8.49 3.18q6.5 0 10.12-4.43l7.64 5.23q-6.21 8.07-17.52 8.07-10.18 0-15.94-6A20.05 20.05 0 0 1 170.73 46 23.35 23.35 0 0 1 182 43.27a22.75 22.75 0 0 1 10.32 2.29 19.59 19.59 0 0 1 7.44 6.51zM223.61 43.27A20.46 20.46 0 0 1 233.88 46a20 20 0 0 1 10.2 17.52 20.25 20.25 0 0 1-2.71 10.21 19.58 19.58 0 0 1-7.37 7.44 20.43 20.43 0 0 1-10.32 2.68 19.25 19.25 0 0 1-14.17-5.91 19.6 19.6 0 0 1-5.87-14.35 20.23 20.23 0 0 1 20-20.32zm.16 9.12a10 10 0 0 0-7.51 3.14 11.15 11.15 0 0 0-3 8 11.34 11.34 0 0 0 3 8.16 9.91 9.91 0 0 0 7.51 3.12 10 10 0 0 0 7.57-3.16 11.27 11.27 0 0 0 3-8.12 11.19 11.19 0 0 0-3-8.07 10 10 0 0 0-7.57-3.07zM250 44.27h9.79v18.58a25.83 25.83 0 0 0 .74 7.54 6.58 6.58 0 0 0 2.4 3.28 6.86 6.86 0 0 0 4.07 1.17 7.09 7.09 0 0 0 4.11-1.15 6.76 6.76 0 0 0 2.51-3.39q.6-1.67.6-7.13v-18.9h9.68v16.35q0 10.11-1.6 13.83a15.1 15.1 0 0 1-5.75 7 17.6 17.6 0 0 1-9.65 2.43q-6.35 0-10.27-2.84a15 15 0 0 1-5.51-7.91Q250 69.59 250 60.33zM290.31 44.27h8.3v4.86a10.37 10.37 0 0 1 3.58-4.36 8.65 8.65 0 0 1 4.89-1.49 9 9 0 0 1 3.94 1l-3 8.34a6.66 6.66 0 0 0-2.8-.85q-2.24 0-3.78 2.77t-1.54 10.85v17.47h-9.61zM338.43 49.66l-6 6Q328.78 52 325.8 52a4.17 4.17 0 0 0-2.55.69 2.08 2.08 0 0 0-.92 1.72 2.11 2.11 0 0 0 .58 1.44 10.94 10.94 0 0 0 2.89 1.79l3.55 1.77q5.6 2.77 7.7 5.64a11.75 11.75 0 0 1-1.68 15.32q-3.78 3.44-10.13 3.44a16.1 16.1 0 0 1-13.48-6.6l6-6.49a13.77 13.77 0 0 0 4 3.21 8.85 8.85 0 0 0 4.06 1.22 4.84 4.84 0 0 0 3.09-.92 2.67 2.67 0 0 0 1.09-2.08q0-2.24-4.22-4.36l-3.26-1.63q-9.36-4.72-9.36-11.81a10.25 10.25 0 0 1 3.53-7.82 12.82 12.82 0 0 1 9-3.25 15.66 15.66 0 0 1 12.7 6.38zM384.42 66.36h-31.1a10.35 10.35 0 0 0 3.6 6.54 11.3 11.3 0 0 0 7.47 2.43 12.9 12.9 0 0 0 9.33-3.79l8.16 3.83a19.26 19.26 0 0 1-7.31 6.4 22.86 22.86 0 0 1-10.11 2.07q-9.08 0-14.79-5.73A19.49 19.49 0 0 1 344 63.78a20.15 20.15 0 0 1 5.69-14.67 19.12 19.12 0 0 1 14.28-5.83q9.11 0 14.83 5.83t5.71 15.41zm-9.68-7.63a9.71 9.71 0 0 0-3.74-5.24 11 11 0 0 0-6.55-2 11.59 11.59 0 0 0-7.11 2.27 12.65 12.65 0 0 0-3.55 5zM51.87 0C23.71 0 0 22.83 0 51v52.81l51.86-.05c28.16 0 51-23.71 51-51.87S80 0 51.87 0z"></path>
+            <path class="cls-2" d="M52.37 19.74a31.62 31.62 0 0 0-27.79 46.67l-5.72 18.4 20.54-4.64a31.61 31.61 0 1 0 13-60.43z"></path>
+            <path class="cls-3" d="M77.45 32.12a31.6 31.6 0 0 1-38.05 48l-20.54 4.7 20.91-2.47a31.6 31.6 0 0 0 37.68-50.23z"></path>
+            <path class="cls-4" d="M71.63 26.29A31.6 31.6 0 0 1 38.8 78l-19.94 6.82 20.54-4.65a31.6 31.6 0 0 0 32.23-53.88z"></path>
+            <path class="cls-5" d="M26.47 67.11a31.61 31.61 0 0 1 51-35 31.61 31.61 0 0 0-52.89 34.3l-5.72 18.4z"></path>
+            <path class="cls-6" d="M24.58 66.41a31.61 31.61 0 0 1 47.05-40.12 31.61 31.61 0 0 0-49 39.63l-3.76 18.9z"></path>
+          </g>
+        </g>
+      </svg>
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a class="menu__link" href="#">About</a>
+      <ul class="submenu" tabindex="-1">
+        <li><a href="https://www.discourse.org/customers">Customers</a></li>
+        <li><a href="https://www.discourse.org/about">What is it?</a></li>
+        <li><a href="http://blog.discourse.org/">Blog</a></li>
+        <li><a href="https://www.discourse.org/contact">Contact us</a></li>
+      </ul>
+    </li>
+    <li><a href="https://www.discourse.org/features">Features</a></li>
+    <li><a href="http://meta.discourse.org/">Community</a></li>
+    <li><a href="http://try.discourse.org/">Demo</a></li>
+    <li><a href="https://payments.discourse.org/pricing">Pricing</a></li>
+  </ul>
+</nav>
+
+<script>
+$('.menu__link').on({
+    click: function (e) {
+      $('.submenu')
+        .toggleClass('submenu--active')
+        .find('a:first')
+      e.preventDefault();
+    },
+    focusout: function () {
+      $('.submenu').data('submenuTimer', setTimeout(function () {
+        $('.submenu').removeClass('submenu--active');
+      }.bind(this), 0));
+    },
+    focusin: function () {
+      clearTimeout($('.submenu').data('submenuTimer'));
+    }
+  });
+  $('.submenu').on({
+    focusout: function () {
+      $(this).data('submenuTimer', setTimeout(function () {
+        $(this).removeClass('submenu--active');
+      }.bind(this), 0));
+    },
+    focusin: function () {
+      clearTimeout($(this).data('submenuTimer'));
+    },
+    keydown: function (e) {
+      if (e.which === 27) {
+        $(this).removeClass('submenu--active');
+        e.preventDefault();
+      }
+    }
+});
+</script>
+
+
+
+    <section id="main" class="ember-application">
+    <div id="ember715" class="ember-view"><span id="ember745" class="ember-view"><!----></span>
+<div id="ember758" class="ember-view"><header class="d-header clearfix" style=""><div class="wrap"><div class="contents clearfix">
+    <div class="title"><a href="https://try.discourse.org/" data-auto-route="true"><h1 id="site-text-logo" class="text-logo">Participatory Budgeting Forum</h1></a></div>
+    <div class="panel clearfix"><span class="header-buttons"><button class="widget-button btn btn-primary btn-small sign-up-button btn-text"><span class="d-button-label">Sign Up</span></button><button class="widget-button btn btn-primary btn-small login-button btn-icon-text"><i class="fa fa-user d-icon d-icon-user" aria-hidden="true"></i><span class="d-button-label">Log In</span></button></span><ul role="navigation" class="icons d-header-icons clearfix"><li class="header-dropdown-toggle"><a href="https://try.discourse.org/search" data-auto-route="true" title="search topics, posts, users, or categories" aria-label="search topics, posts, users, or categories" id="search-button" class="icon btn-flat"><i class="fa fa-search d-icon d-icon-search" aria-hidden="true"></i></a></li><li class="header-dropdown-toggle"><a href="" data-auto-route="true" title="go to another topic list or category" aria-label="go to another topic list or category" id="toggle-hamburger-menu" class="icon btn-flat"><i class="fa fa-bars d-icon d-icon-bars" aria-hidden="true"></i></a></li></ul></div>
+  </div></div></header></div>
+
+<span id="ember759" class="ember-view"><!----></span>
+
+<div id="main-outlet" class="wrap">
+  <div class="container">
+      <div id="ember764" class="ember-view"></div>
+    <div id="ember770" class="ember-view"></div>
+    <div id="ember773" class="hidden create-topics-notice ember-view"><!----></div>
+  </div>
+  <div class="container">
+  <div id="ember1214" class="ember-view"><!----></div>
+</div>
+
+<div class="list-controls">
+  <div class="container">
+    <section id="ember1222" class="navigation-container ember-view">  <ol id="ember1224" class="category-breadcrumb ember-view"><li id="ember1225" class="select-kit single-select combobox combo-box category-drop is-below is-left-aligned has-reached-minimum bullet ember-view"><div aria-haspopup="" tabindex="0" id="ember1226" class="select-kit-header combo-box-header category-drop-header is-none ember-view"><span class="selected-name">
+  <span class="category-name">all categories</span>
+</span>
+
+<i class="fa fa-caret-right d-icon d-icon-caret-right caret-icon fa-fw"></i>
+</div>
+
+<div class="select-kit-body" style="left: 0px; bottom: auto; top: 33.6px; right: unset;">
+  <div id="ember1227" class="select-kit-filter is-hidden ember-view"><input autocapitalize="off" autocorrect="off" autocomplete="off" tabindex="-1" spellcheck="false" placeholder="Search..." id="ember1228" class="filter-input ember-text-field ember-view" type="text">
+
+    <i class="fa fa-search d-icon d-icon-search filter-icon"></i>
+</div>
+
+<!----></div>
+
+<div class="select-kit-wrapper" style="width: 120.1px; height: 30.6px;"></div>
+</li>
+
+<!---->
+  <li id="ember1229" class="select-kit single-select combobox combo-box tag-drop is-below is-left-aligned has-reached-minimum bullet tag_all ember-view"><div aria-haspopup="" tabindex="0" id="ember1230" class="select-kit-header combo-box-header tag-drop-header is-none ember-view"><span class="selected-name">
+  all tags
+</span>
+
+<i class="fa fa-caret-right d-icon d-icon-caret-right caret-icon fa-fw"></i>
+</div>
+
+<div class="select-kit-body" style="left: 0px; bottom: auto; top: 33.6px; right: unset;">
+  <div id="ember1231" class="select-kit-filter is-hidden ember-view"><input autocapitalize="off" autocorrect="off" autocomplete="off" tabindex="-1" spellcheck="false" placeholder="Search..." id="ember1232" class="filter-input ember-text-field ember-view" type="text">
+
+    <i class="fa fa-search d-icon d-icon-search filter-icon"></i>
+</div>
+
+<!----></div>
+
+<div class="select-kit-wrapper" style="width: 79.3167px; height: 30.6px;"></div>
+</li>
+
+<span id="ember1233" class="ember-view"><!----></span>
+
+<div class="clear"></div>
+</ol>
+
+<!---->
+<ul id="navigation-bar" class="nav nav-pills ember-view">  <li title="topics with recent posts" id="ember1235" class="active ember-view"><a href="https://try.discourse.org/latest">Latest</a></li>
+  <li title="the most active topics in the last year, month, week or day" id="ember1237" class="ember-view"><a href="https://try.discourse.org/top">Top</a></li>
+  <li title="all topics grouped by category" id="ember1239" class="ember-view"><a href="https://try.discourse.org/categories">Categories</a></li>
+<li id="ember1240" class="ember-view"></li>
+<!----></ul>
+
+<!---->
+<!---->
+
+<!---->
+</section>
+  </div>
+</div>
+
+<div id="ember1215" class="loading-container ember-view">
+</div>
+
+<div class="container list-container ">
+  <div class="row">
+    <div class="full-width">
+      <div id="header-list-area">
+        <!---->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="full-width">
+      <div id="list-area">
+        <span id="ember1216" class="ember-view"><!----></span>
+        <!---->
+<!---->
+<!---->
+<div id="ember1243" class="bulk-select-container ember-view"><!----></div>
+
+<div id="ember1244" class="contents ember-view"><!---->
+    <table id="ember1245" class="topic-list ember-view">  <thead>
+    <tr><th data-sort-order="default" class="default">Topic</th>
+
+  <th data-sort-order="category" class="category sortable">Category</th>
+
+  <th data-sort-order="posters" class="posters">Users</th>
+
+<th data-sort-order="posts" class="posts sortable num">Replies</th>
+
+<th data-sort-order="views" class="views sortable num">Views</th>
+
+<th data-sort-order="activity" class="activity sortable num">Activity</th>
+
+</tr>
+  </thead>
+
+<!---->
+
+<tbody>
+    <tr data-topic-id="57" id="ember1247" class="topic-list-item category-uncategorized has-excerpt pinned ember-view">
+<td class="main-link clearfix" colspan="2">
+  <span class="link-top-line">
+
+    <div class="topic-statuses">
+<span title="This topic is pinned for you; it will display at the top of its category" class="topic-status"><i class="fa fa-thumb-tack d-icon d-icon-thumb-tack"></i></span></div>
+
+    <a href="https://try.discourse.org/t/welcome-to-our-demo/57" class="title raw-link raw-topic-link">Welcome to our Participatory Budgeting forum!</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+      <div class="topic-excerpt">
+        This is an open platform where everyone in our village can discuss how we should spend our budget.
+      <a href="https://try.discourse.org/t/welcome-to-our-demo/57">read more</a>
+  </div>
+
+
+</td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/samsaffron" data-user-card="samsaffron" class="latest single"><img alt="" src="demo_files/50_004.png" class="avatar latest single" title="samsaffron - Original Poster, Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 0 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">0</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 379 times">379</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 3:26 pm
+Posted: Apr 20, 2017 4:50 am"><a class="post-activity" href="https://try.discourse.org/t/welcome-to-our-demo/57/1"><span class="relative-date with-year" data-time="1492678210886" data-format="tiny">Apr '17</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="97" id="ember1248" class="topic-list-item category-videos ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/what-is-your-favorite-ted-video/97" class="title raw-link raw-topic-link">Park in Ward 3 needs repair!</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/videos"><span class="badge-category-bg" style="background-color: #258af1;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about any aspect of online video. Discussions about movies and TV should be in the Movies category."><span class="category-name">places</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/rich" data-user-card="rich" class=""><img alt="" src="demo_files/50.png" class="avatar" title="rich - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/cameronbr" data-user-card="cameronbr" class=""><img alt="" src="demo_files/50_007.png" class="avatar" title="cameronbr - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/jaredchung" data-user-card="JaredChung" class=""><img alt="" src="demo_files/50_006.png" class="avatar" title="JaredChung - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/erlend_sh" data-user-card="erlend_sh" class=""><img alt="" src="demo_files/50_005.png" class="avatar" title="erlend_sh - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/vesinhchamclean" data-user-card="vesinhchamclean" class="latest"><img alt="" src="demo_files/50.png" class="avatar latest" title="vesinhchamclean - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-low" title="This topic has 15 replies with a high like to post ratio">
+  <a href="" class="posts-map badge-posts heatmap-low">
+
+    <span class="number">15</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 263 times">263</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 9:46 pm
+Posted: Apr 17, 2018 11:57 am"><a class="post-activity" href="https://try.discourse.org/t/what-is-your-favorite-ted-video/97/16"><span class="relative-date" data-time="1523980638691" data-format="tiny">1h</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="1056" id="ember1249" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/what-is-a-cripshop-it-is-like-amazon/1056" class="title raw-link raw-topic-link">Our schools need more money!</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+  <div class="discourse-tags"><a href="https://try.discourse.org/tags/art" class="tag-art discourse-tag simple">education</a> </div>
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/vesinhchamclean" data-user-card="vesinhchamclean" class="latest single"><img alt="" src="demo_files/50_011.png" class="avatar latest single" title="vesinhchamclean - Original Poster, Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 0 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">0</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 2 times">2</span></td>
+
+<td class="num age activity" title="First post: Apr 17, 2018 11:54 am
+Posted: Apr 17, 2018 11:54 am"><a class="post-activity" href="https://try.discourse.org/t/what-is-a-cripshop-it-is-like-amazon/1056/1"><span class="relative-date" data-time="1523980440400" data-format="tiny">1h</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="65" id="ember1250" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/what-do-the-avatars-in-the-topic-list-mean/65" class="title raw-link raw-topic-link">Stop spending so much money on sports stadiums - our roads are crumbling!</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/johnsmith" data-user-card="johnsmith" class=""><img alt="" src="demo_files/50_004.png" class="avatar" title="johnsmith - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/clay_7" data-user-card="clay_7" class=""><img alt="" src="demo_files/50.png" class="avatar" title="clay_7 - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/50_011.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/mcwumbly" data-user-card="mcwumbly" class=""><img alt="" src="demo_files/50_008.png" class="avatar" title="mcwumbly - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/aleksandra_osinska" data-user-card="Aleksandra_Osinska" class="latest"><img alt="" src="demo_files/50_005.png" class="avatar latest" title="Aleksandra_Osinska - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 6 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">6</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 245 times">245</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 3:50 pm
+Posted: Apr 17, 2018 9:56 am"><a class="post-activity" href="https://try.discourse.org/t/what-do-the-avatars-in-the-topic-list-mean/65/8"><span class="relative-date" data-time="1523973406117" data-format="tiny">3h</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="1048" id="ember1251" class="topic-list-item category-uncategorized ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/21test321446sdfkewrwerqweqweq/1048" class="title raw-link raw-topic-link">Thoughts on cultural attractions?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+  <div class="discourse-tags"><a href="https://try.discourse.org/tags/testing" class="tag-testing discourse-tag simple">art</a> </div>
+
+</td>
+
+    <td class="category"></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/testing21" data-user-card="testing21" class="latest single"><img alt="" src="demo_files/50_009.png" class="avatar latest single" title="testing21 - Original Poster, Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 0 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">0</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 7 times">7</span></td>
+
+<td class="num age activity" title="First post: Apr 17, 2018 8:41 am
+Posted: Apr 17, 2018 8:49 am"><a class="post-activity" href="https://try.discourse.org/t/21test321446sdfkewrwerqweqweq/1048/1"><span class="relative-date" data-time="1523969347077" data-format="tiny">4h</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="289" id="ember1252" class="topic-list-item category-movies ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/the-room-appreciation-topic/289" class="title raw-link raw-topic-link">PROPOSAL: a budget for the 99%</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/movies"><span class="badge-category-bg" style="background-color: #B22222;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about movies and television, including reviews, news, commentary and other discussion."><span class="category-name">proposals</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/haiku" data-user-card="haiku" class=""><img alt="" src="demo_files/50_003.png" class="avatar" title="haiku - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/eggs_mclaren" data-user-card="Eggs_McLaren" class=""><img alt="" src="demo_files/50_002.jpg" class="avatar" title="Eggs_McLaren - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/eviltrout" data-user-card="eviltrout" class=""><img alt="" src="demo_files/50_011.png" class="avatar" title="eviltrout - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/neil" data-user-card="Neil" class=""><img alt="" src="demo_files/50_008.png" class="avatar" title="Neil - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/50_009.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 5 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">5</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 295 times">295</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Aug 25, 2014 9:16 pm
+Posted: Jan 8, 2018 1:50 am"><a class="post-activity" href="https://try.discourse.org/t/the-room-appreciation-topic/289/6"><span class="relative-date" data-time="1515394207903" data-format="tiny">Jan 8</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="60" id="ember1253" class="topic-list-item category-discourse ember-view" data-islastviewedtopic="true">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/whats-that-thing-under-the-first-post/60/2" class="title raw-link raw-topic-link">What’s that thing under the first post?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/johnsmith" data-user-card="johnsmith" class=""><img alt="" src="demo_files/50_004.png" class="avatar" title="johnsmith - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/cameronbr" data-user-card="cameronbr" class=""><img alt="" src="demo_files/50_011.png" class="avatar" title="cameronbr - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 2 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">2</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 238 times">238</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 3:31 pm
+Posted: Mar 22, 2016 11:25 am"><a class="post-activity" href="https://try.discourse.org/t/whats-that-thing-under-the-first-post/60/3"><span class="relative-date with-year" data-time="1458660350371" data-format="tiny">Mar '16</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="51" id="ember1254" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/how-do-i-reply-to-folks-here/51" class="title raw-link raw-topic-link">How do I reply to folks here?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/johnsmith" data-user-card="johnsmith" class=""><img alt="" src="demo_files/50_004.png" class="avatar" title="johnsmith - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/tms" data-user-card="tms" class=""><img alt="" src="demo_files/50_010.png" class="avatar" title="tms - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/186_1.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/tinyhands" data-user-card="tinyhands" class="latest"><img alt="" src="demo_files/584_1.png" class="avatar latest" title="tinyhands - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">4</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 241 times">241</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 3:00 pm
+Posted: Mar 21, 2016 12:33 pm"><a class="post-activity" href="https://try.discourse.org/t/how-do-i-reply-to-folks-here/51/5"><span class="relative-date with-year" data-time="1458578007712" data-format="tiny">Mar '16</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="61" id="ember1255" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/is-there-a-markdown-or-bbcode-reference/61" class="title raw-link raw-topic-link">Is there a Markdown or BBCode reference?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/johnsmith" data-user-card="johnsmith" class=""><img alt="" src="demo_files/50_004.png" class="avatar" title="johnsmith - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 1 reply">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">1</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 229 times">229</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 3:33 pm
+Posted: Jan 16, 2016 6:19 am"><a class="post-activity" href="https://try.discourse.org/t/is-there-a-markdown-or-bbcode-reference/61/2"><span class="relative-date with-year" data-time="1452943140876" data-format="tiny">Jan '16</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="77" id="ember1256" class="topic-list-item category-general ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/whoa-check-out-this-crazy-paper-artwork/77" class="title raw-link raw-topic-link">Whoa. Check out this crazy paper artwork</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+  <div class="discourse-tags"><a href="https://try.discourse.org/tags/art" class="tag-art discourse-tag simple">art</a> </div>
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/general"><span class="badge-category-bg" style="background-color: #70a0C0;"></span><span data-drop-close="true" class="badge-category clear-badge" title="General discussion topics not specifically fitting any other category. If you're not sure what to pick, either select no category at all, or use this one!"><span class="category-name">general</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/daryljames" data-user-card="daryljames" class=""><img alt="" src="demo_files/50_008.png" class="avatar" title="daryljames - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/stienman" data-user-card="stienman" class=""><img alt="" src="demo_files/195_1.png" class="avatar" title="stienman - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/sweetbaby" data-user-card="Sweetbaby" class=""><img alt="" src="demo_files/197_1.png" class="avatar" title="Sweetbaby - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">3</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 247 times">247</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 7:50 pm
+Posted: Sep 24, 2015 7:43 pm"><a class="post-activity" href="https://try.discourse.org/t/whoa-check-out-this-crazy-paper-artwork/77/4"><span class="relative-date with-year" data-time="1443138200223" data-format="tiny">Sep '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="287" id="ember1257" class="topic-list-item category-videos ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/recommend-a-great-youtube-video/287" class="title raw-link raw-topic-link">Recommend a great YouTube video</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/videos"><span class="badge-category-bg" style="background-color: #258af1;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about any aspect of online video. Discussions about movies and TV should be in the Movies category."><span class="category-name">videos</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/techapj" data-user-card="techAPJ" class=""><img alt="" src="demo_files/286_1.png" class="avatar" title="techAPJ - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/rudy" data-user-card="rudy" class=""><img alt="" src="demo_files/294_1.jpg" class="avatar" title="rudy - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/bhaelochon" data-user-card="BhaelOchon" class=""><img alt="" src="demo_files/292_1.png" class="avatar" title="BhaelOchon - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/riking27" data-user-card="riking27" class="latest"><img alt="" src="demo_files/221_1.png" class="avatar latest" title="riking27 - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">4</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 241 times">241</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Aug 24, 2014 11:23 am
+Posted: Sep 24, 2015 7:31 pm"><a class="post-activity" href="https://try.discourse.org/t/recommend-a-great-youtube-video/287/5"><span class="relative-date with-year" data-time="1443137499100" data-format="tiny">Sep '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="54" id="ember1258" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/can-i-log-in-with-google-and-a-forum-log-in-too/54" class="title raw-link raw-topic-link">Can I log in with Google and a forum log in too?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/johnsmith" data-user-card="johnsmith" class=""><img alt="" src="demo_files/50_004.png" class="avatar" title="johnsmith - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/stienman" data-user-card="stienman" class=""><img alt="" src="demo_files/195_1.png" class="avatar" title="stienman - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">3</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 205 times">205</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 3:06 pm
+Posted: Sep 24, 2015 7:21 pm"><a class="post-activity" href="https://try.discourse.org/t/can-i-log-in-with-google-and-a-forum-log-in-too/54/4"><span class="relative-date with-year" data-time="1443136869944" data-format="tiny">Sep '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="258" id="ember1259" class="topic-list-item category-uncategorized ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/whats-the-coolest-thing-you-have-worked-on/258" class="title raw-link raw-topic-link">What’s the coolest thing you have worked on?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/trident" data-user-card="trident" class=""><img alt="" src="demo_files/280_1.png" class="avatar" title="trident - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/cpradio" data-user-card="cpradio" class=""><img alt="" src="demo_files/50_009.png" class="avatar" title="cpradio - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/bhaelochon" data-user-card="BhaelOchon" class=""><img alt="" src="demo_files/292_1.png" class="avatar" title="BhaelOchon - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">3</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 211 times">211</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Aug 19, 2014 4:59 pm
+Posted: Sep 24, 2015 7:12 pm"><a class="post-activity" href="https://try.discourse.org/t/whats-the-coolest-thing-you-have-worked-on/258/4"><span class="relative-date with-year" data-time="1443136328585" data-format="tiny">Sep '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="55" id="ember1260" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/can-i-find-stuff-while-writing-replies/55" class="title raw-link raw-topic-link">Can I find stuff while writing replies?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/johnsmith" data-user-card="johnsmith" class=""><img alt="" src="demo_files/50_004.png" class="avatar" title="johnsmith - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/cameronbr" data-user-card="cameronbr" class=""><img alt="" src="demo_files/50_011.png" class="avatar" title="cameronbr - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 2 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">2</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 213 times">213</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 3:14 pm
+Posted: Sep 24, 2015 7:05 pm"><a class="post-activity" href="https://try.discourse.org/t/can-i-find-stuff-while-writing-replies/55/3"><span class="relative-date with-year" data-time="1443135939392" data-format="tiny">Sep '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="325" id="ember1261" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/how-can-i-make-a-post-wiki/325" class="title raw-link raw-topic-link">How can I make a post Wiki?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/techapj" data-user-card="techAPJ" class="latest single"><img alt="" src="demo_files/286_1.png" class="avatar latest single" title="techAPJ - Original Poster, Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 1 reply">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">1</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 88 times">88</span></td>
+
+<td class="num age activity" title="First post: Sep 24, 2015 10:24 am
+Posted: Sep 24, 2015 7:02 pm"><a class="post-activity" href="https://try.discourse.org/t/how-can-i-make-a-post-wiki/325/2"><span class="relative-date with-year" data-time="1443135721634" data-format="tiny">Sep '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="276" id="ember1262" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/what-is-a-onebox/276" class="title raw-link raw-topic-link">What is a onebox?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/techapj" data-user-card="techAPJ" class=""><img alt="" src="demo_files/286_1.png" class="avatar" title="techAPJ - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/stienman" data-user-card="stienman" class=""><img alt="" src="demo_files/195_1.png" class="avatar" title="stienman - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/eviltrout" data-user-card="eviltrout" class=""><img alt="" src="demo_files/207_1.png" class="avatar" title="eviltrout - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/186_1.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/cpradio" data-user-card="cpradio" class="latest"><img alt="" src="demo_files/50_009.png" class="avatar latest" title="cpradio - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-low" title="This topic has 10 replies with a high like to post ratio">
+  <a href="" class="posts-map badge-posts heatmap-low">
+
+    <span class="number">10</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 337 times">337</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Aug 21, 2014 9:52 am
+Posted: Jul 4, 2015 8:13 pm"><a class="post-activity" href="https://try.discourse.org/t/what-is-a-onebox/276/11"><span class="relative-date with-year" data-time="1436055225977" data-format="tiny">Jul '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="267" id="ember1263" class="topic-list-item category-videos ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/favorite-tv-show-scene/267" class="title raw-link raw-topic-link">Favorite TV show scene?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/videos"><span class="badge-category-bg" style="background-color: #258af1;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about any aspect of online video. Discussions about movies and TV should be in the Movies category."><span class="category-name">videos</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/fantasticfears" data-user-card="fantasticfears" class=""><img alt="" src="demo_files/285_1.png" class="avatar" title="fantasticfears - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/mcwumbly" data-user-card="mcwumbly" class=""><img alt="" src="demo_files/284_1.png" class="avatar" title="mcwumbly - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/trident" data-user-card="trident" class=""><img alt="" src="demo_files/280_1.png" class="avatar" title="trident - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/techapj" data-user-card="techAPJ" class=""><img alt="" src="demo_files/286_1.png" class="avatar" title="techAPJ - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/contrabig" data-user-card="contrabig" class="latest"><img alt="" src="demo_files/50_006.png" class="avatar latest" title="contrabig - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 5 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">5</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 249 times">249</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Aug 20, 2014 10:28 pm
+Posted: Jun 8, 2015 4:28 pm"><a class="post-activity" href="https://try.discourse.org/t/favorite-tv-show-scene/267/6"><span class="relative-date with-year" data-time="1433795295244" data-format="tiny">Jun '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="291" id="ember1264" class="topic-list-item category-uncategorized ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/is-the-second-amendment-still-relevant-today/291" class="title raw-link raw-topic-link">Is the Second Amendment still relevant today?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/marcy" data-user-card="marcy" class=""><img alt="" src="demo_files/50_007.png" class="avatar" title="marcy - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/eviltrout" data-user-card="eviltrout" class=""><img alt="" src="demo_files/207_1.png" class="avatar" title="eviltrout - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/neilll" data-user-card="neilll" class=""><img alt="" src="demo_files/204_1.png" class="avatar" title="neilll - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/gungadin" data-user-card="gungadin" class=""><img alt="" src="demo_files/50_003.png" class="avatar" title="gungadin - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 21 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">21</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 125 times">125</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Aug 26, 2014 4:41 am
+Posted: May 6, 2015 8:02 am"><a class="post-activity" href="https://try.discourse.org/t/is-the-second-amendment-still-relevant-today/291/22"><span class="relative-date with-year" data-time="1430913752896" data-format="tiny">May '15</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="304" id="ember1265" class="topic-list-item category-tech ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/what-methods-books-did-you-use-to-learn-ruby/304" class="title raw-link raw-topic-link">What methods/books did you use to learn Ruby?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+  <div class="discourse-tags"><a href="https://try.discourse.org/tags/code" class="tag-code discourse-tag simple">code</a> </div>
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/tech"><span class="badge-category-bg" style="background-color: #444;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about technology: computers, gadgets, phones, cameras, the Intertubes, or any other IT aspects of the world."><span class="category-name">tech</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/cpradio" data-user-card="cpradio" class=""><img alt="" src="demo_files/50_009.png" class="avatar" title="cpradio - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/mcwumbly" data-user-card="mcwumbly" class=""><img alt="" src="demo_files/284_1.png" class="avatar" title="mcwumbly - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/eggs_mclaren" data-user-card="Eggs_McLaren" class=""><img alt="" src="demo_files/357_1.jpg" class="avatar" title="Eggs_McLaren - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/elberet" data-user-card="elberet" class="latest"><img alt="" src="demo_files/299_1.png" class="avatar latest" title="elberet - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">4</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 205 times">205</span></td>
+
+<td class="num age activity" title="First post: Aug 26, 2014 2:28 pm
+Posted: Aug 28, 2014 7:13 pm"><a class="post-activity" href="https://try.discourse.org/t/what-methods-books-did-you-use-to-learn-ruby/304/5"><span class="relative-date with-year" data-time="1409267603231" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="284" id="ember1266" class="topic-list-item category-tech ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/poll-whats-your-preferred-mobile-os/284" class="title raw-link raw-topic-link">Poll: What’s your preferred mobile OS?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/tech"><span class="badge-category-bg" style="background-color: #444;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about technology: computers, gadgets, phones, cameras, the Intertubes, or any other IT aspects of the world."><span class="category-name">tech</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/techapj" data-user-card="techAPJ" class=""><img alt="" src="demo_files/286_1.png" class="avatar" title="techAPJ - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/cpradio" data-user-card="cpradio" class=""><img alt="" src="demo_files/50_009.png" class="avatar" title="cpradio - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/bhaelochon" data-user-card="BhaelOchon" class="latest"><img alt="" src="demo_files/292_1.png" class="avatar latest" title="BhaelOchon - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 2 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">2</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 207 times">207</span></td>
+
+<td class="num age activity" title="First post: Aug 24, 2014 9:54 am
+Posted: Aug 27, 2014 2:32 pm"><a class="post-activity" href="https://try.discourse.org/t/poll-whats-your-preferred-mobile-os/284/3"><span class="relative-date with-year" data-time="1409164374323" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="48" id="ember1267" class="topic-list-item category-general ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/a-bear-however-hard-he-tries-grows-tubby-without-exercise/48" class="title raw-link raw-topic-link">A bear, however hard he tries, grows tubby without exercise</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/general"><span class="badge-category-bg" style="background-color: #70a0C0;"></span><span data-drop-close="true" class="badge-category clear-badge" title="General discussion topics not specifically fitting any other category. If you're not sure what to pick, either select no category at all, or use this one!"><span class="category-name">general</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/stienman" data-user-card="stienman" class=""><img alt="" src="demo_files/195_1.png" class="avatar" title="stienman - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/clay_7" data-user-card="clay_7" class=""><img alt="" src="demo_files/194_1.png" class="avatar" title="clay_7 - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/gknauss" data-user-card="gknauss" class=""><img alt="" src="demo_files/192_1.png" class="avatar" title="gknauss - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/186_1.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/eggs_mclaren" data-user-card="Eggs_McLaren" class="latest"><img alt="" src="demo_files/357_1.jpg" class="avatar latest" title="Eggs_McLaren - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 5 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">5</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 228 times">228</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 2:38 pm
+Posted: Aug 27, 2014 2:40 am"><a class="post-activity" href="https://try.discourse.org/t/a-bear-however-hard-he-tries-grows-tubby-without-exercise/48/6"><span class="relative-date with-year" data-time="1409121650138" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="67" id="ember1268" class="topic-list-item category-general ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/mlp-fim-season-3-spoilers-ahoy/67" class="title raw-link raw-topic-link">MLP:FIM Season 3 (spoilers ahoy!)</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/general"><span class="badge-category-bg" style="background-color: #70a0C0;"></span><span data-drop-close="true" class="badge-category clear-badge" title="General discussion topics not specifically fitting any other category. If you're not sure what to pick, either select no category at all, or use this one!"><span class="category-name">general</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/pollyanna" data-user-card="Pollyanna" class=""><img alt="" src="demo_files/198_1.png" class="avatar" title="Pollyanna - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/nsahler" data-user-card="nsahler" class=""><img alt="" src="demo_files/196_1.png" class="avatar" title="nsahler - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/sweetbaby" data-user-card="Sweetbaby" class=""><img alt="" src="demo_files/197_1.png" class="avatar" title="Sweetbaby - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/oldschooldm" data-user-card="OldSchoolDM" class="latest"><img alt="" src="demo_files/193_1.png" class="avatar latest" title="OldSchoolDM - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">4</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 209 times">209</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 4:17 pm
+Posted: Aug 27, 2014 2:10 am"><a class="post-activity" href="https://try.discourse.org/t/mlp-fim-season-3-spoilers-ahoy/67/5"><span class="relative-date with-year" data-time="1409119828743" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="81" id="ember1269" class="topic-list-item category-gaming ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/impressions-games-city-builders/81" class="title raw-link raw-topic-link">Impressions Games City Builders</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/gaming"><span class="badge-category-bg" style="background-color: #800080;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about gaming of any kind: videogames, board games, card games, role playing games, you name it."><span class="category-name">gaming</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/hirsuteness" data-user-card="hirsuteness" class=""><img alt="" src="demo_files/50_002.png" class="avatar" title="hirsuteness - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/cameronbr" data-user-card="cameronbr" class=""><img alt="" src="demo_files/50_011.png" class="avatar" title="cameronbr - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/186_1.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/elberet" data-user-card="elberet" class="latest"><img alt="" src="demo_files/299_1.png" class="avatar latest" title="elberet - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">3</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 217 times">217</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Feb 4, 2013 8:08 pm
+Posted: Aug 26, 2014 7:08 pm"><a class="post-activity" href="https://try.discourse.org/t/impressions-games-city-builders/81/4"><span class="relative-date with-year" data-time="1409094513318" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="25" id="ember1270" class="topic-list-item category-tech ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/do-you-use-a-mobile-device-for-all-your-work-tell-me-how/25" class="title raw-link raw-topic-link">Do you use a mobile device for ALL your work? Tell me how!</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/tech"><span class="badge-category-bg" style="background-color: #444;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about technology: computers, gadgets, phones, cameras, the Intertubes, or any other IT aspects of the world."><span class="category-name">tech</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/pekka_gaiser" data-user-card="pekka_gaiser" class=""><img alt="" src="demo_files/188_1.png" class="avatar" title="pekka_gaiser - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/sweetbaby" data-user-card="Sweetbaby" class=""><img alt="" src="demo_files/197_1.png" class="avatar" title="Sweetbaby - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/nsahler" data-user-card="nsahler" class=""><img alt="" src="demo_files/196_1.png" class="avatar" title="nsahler - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/186_1.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/mcwumbly" data-user-card="mcwumbly" class="latest"><img alt="" src="demo_files/284_1.png" class="avatar latest" title="mcwumbly - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">4</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 238 times">238</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Jan 31, 2013 4:04 pm
+Posted: Aug 26, 2014 2:43 pm"><a class="post-activity" href="https://try.discourse.org/t/do-you-use-a-mobile-device-for-all-your-work-tell-me-how/25/5"><span class="relative-date with-year" data-time="1409078624165" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="302" id="ember1271" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/how-do-i-add-pictures-to-a-post/302" class="title raw-link raw-topic-link">How do I add pictures to a post?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/eggs_mclaren" data-user-card="Eggs_McLaren" class=""><img alt="" src="demo_files/357_1.jpg" class="avatar" title="Eggs_McLaren - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/186_1.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/cpradio" data-user-card="cpradio" class=""><img alt="" src="demo_files/50_009.png" class="avatar" title="cpradio - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/mcwumbly" data-user-card="mcwumbly" class="latest"><img alt="" src="demo_files/284_1.png" class="avatar latest" title="mcwumbly - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 4 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">4</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 302 times">302</span></td>
+
+<td class="num age activity" title="First post: Aug 26, 2014 1:08 pm
+Posted: Aug 26, 2014 2:34 pm"><a class="post-activity" href="https://try.discourse.org/t/how-do-i-add-pictures-to-a-post/302/5"><span class="relative-date with-year" data-time="1409078079355" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="123" id="ember1272" class="topic-list-item category-discourse ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/can-i-upload-attachments/123" class="title raw-link raw-topic-link">Can I upload attachments?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/discourse"><span class="badge-category-bg" style="background-color: #00B355;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design."><span class="category-name">spending</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Original Poster, Most Recent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/wumpus1" data-user-card="wumpus1" class=""><img alt="" src="demo_files/187_1.png" class="avatar" title="wumpus1 - Frequent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 3 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">3</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 233 times">233</span></td>
+
+<td class="num age coldmap-high activity" title="First post: Jul 22, 2013 7:27 pm
+Posted: Aug 26, 2014 1:26 pm"><a class="post-activity" href="https://try.discourse.org/t/can-i-upload-attachments/123/5"><span class="relative-date with-year" data-time="1409074015037" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="301" id="ember1273" class="topic-list-item category-uncategorized ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/what-happens-when-a-topic-has-over-1000-replies/301" class="title raw-link raw-topic-link">What happens when a topic has over 1000 replies?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/neil" data-user-card="Neil" class=""><img alt="" src="demo_files/203_1.png" class="avatar" title="Neil - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/haiku" data-user-card="haiku" class=""><img alt="" src="demo_files/297_1.png" class="avatar" title="haiku - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/eviltrout" data-user-card="eviltrout" class=""><img alt="" src="demo_files/207_1.png" class="avatar" title="eviltrout - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/186_1.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/zogstrip" data-user-card="zogstrip" class="latest"><img alt="" src="demo_files/220_1.png" class="avatar latest" title="zogstrip - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 999 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">999</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 246 times">246</span></td>
+
+<td class="num age activity" title="First post: Aug 26, 2014 1:04 pm
+Posted: Aug 26, 2014 1:07 pm"><a class="post-activity" href="https://try.discourse.org/t/what-happens-when-a-topic-has-over-1000-replies/301/1000"><span class="relative-date with-year" data-time="1409072850819" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="264" id="ember1274" class="topic-list-item category-movies ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/whats-your-all-time-favorite-movie-scene/264" class="title raw-link raw-topic-link">What’s your all-time favorite movie scene?</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/movies"><span class="badge-category-bg" style="background-color: #B22222;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about movies and television, including reviews, news, commentary and other discussion."><span class="category-name">movies</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/techapj" data-user-card="techAPJ" class=""><img alt="" src="demo_files/286_1.png" class="avatar" title="techAPJ - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/rudy" data-user-card="rudy" class=""><img alt="" src="demo_files/294_1.jpg" class="avatar" title="rudy - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/riking27" data-user-card="riking27" class=""><img alt="" src="demo_files/221_1.png" class="avatar" title="riking27 - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/haiku" data-user-card="haiku" class=""><img alt="" src="demo_files/297_1.png" class="avatar" title="haiku - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-low" title="This topic has 9 replies with a high like to post ratio">
+  <a href="" class="posts-map badge-posts heatmap-low">
+
+    <span class="number">9</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 958 times">958</span></td>
+
+<td class="num age activity" title="First post: Aug 20, 2014 7:37 am
+Posted: Aug 26, 2014 12:59 pm"><a class="post-activity" href="https://try.discourse.org/t/whats-your-all-time-favorite-movie-scene/264/10"><span class="relative-date with-year" data-time="1409072361842" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="278" id="ember1275" class="topic-list-item category-uncategorized ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/recommended-reading-for-community-and-foss-enthusiasts/278" class="title raw-link raw-topic-link">Recommended reading for Community and FOSS enthusiasts</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/erlend_sh" data-user-card="erlend_sh" class="latest"><img alt="" src="demo_files/282_1.png" class="avatar latest" title="erlend_sh - Original Poster, Most Recent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class=""><img alt="" src="demo_files/186_1.png" class="avatar" title="codinghorror - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/eggs_mclaren" data-user-card="Eggs_McLaren" class=""><img alt="" src="demo_files/357_1.jpg" class="avatar" title="Eggs_McLaren - Frequent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 5 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">5</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 639 times">639</span></td>
+
+<td class="num age activity" title="First post: Aug 21, 2014 1:49 pm
+Posted: Aug 26, 2014 12:52 pm"><a class="post-activity" href="https://try.discourse.org/t/recommended-reading-for-community-and-foss-enthusiasts/278/6"><span class="relative-date with-year" data-time="1409071959832" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+    <tr data-topic-id="299" id="ember1276" class="topic-list-item category-movies ember-view">
+<td class="main-link clearfix" colspan="1">
+  <span class="link-top-line">
+
+
+    <a href="https://try.discourse.org/t/enjoyable-children-s-shows-for-adults/299" class="title raw-link raw-topic-link">Enjoyable children’s shows for adults</a>
+
+      <span class="topic-post-badges">
+</span>
+
+  </span>
+
+
+
+</td>
+
+    <td class="category"><a class="badge-wrapper bullet" href="https://try.discourse.org/c/movies"><span class="badge-category-bg" style="background-color: #B22222;"></span><span data-drop-close="true" class="badge-category clear-badge" title="Topics about movies and television, including reviews, news, commentary and other discussion."><span class="category-name">movies</span></span></a></td>
+
+
+  <td class="posters">
+<a href="https://try.discourse.org/u/michael" data-user-card="michael" class=""><img alt="" src="demo_files/208_1.png" class="avatar" title="michael - Original Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/samsaffron" data-user-card="samsaffron" class=""><img alt="" src="demo_files/190_1.png" class="avatar" title="samsaffron - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/sweetbaby" data-user-card="Sweetbaby" class=""><img alt="" src="demo_files/197_1.png" class="avatar" title="Sweetbaby - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/hanzo" data-user-card="Hanzo" class=""><img alt="" src="demo_files/216_1.png" class="avatar" title="Hanzo - Frequent Poster" width="25" height="25"></a>
+<a href="https://try.discourse.org/u/codinghorror" data-user-card="codinghorror" class="latest"><img alt="" src="demo_files/186_1.png" class="avatar latest" title="codinghorror - Most Recent Poster" width="25" height="25"></a>
+</td>
+
+
+<td class="num posts-map posts heatmap-" title="This topic has 7 replies">
+  <a href="" class="posts-map badge-posts heatmap-">
+
+    <span class="number">7</span>
+  </a>
+</td>
+
+
+
+
+
+<td class="num views "><span class="number" title="this topic has been viewed 198 times">198</span></td>
+
+<td class="num age activity" title="First post: Aug 26, 2014 12:27 pm
+Posted: Aug 26, 2014 12:50 pm"><a class="post-activity" href="https://try.discourse.org/t/enjoyable-children-s-shows-for-adults/299/8"><span class="relative-date with-year" data-time="1409071813855" data-format="tiny">Aug '14</span></a></td>
+
+</tr>
+
+</tbody>
+</table>
+</div>
+<footer class="topic-list-bottom">
+  <div id="ember1277" class="loading-container ember-view">
+</div>
+<!----></footer>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<span id="ember1217" class="ember-view"><!----></span>
+
+  <div id="user-card" class="show-badges no-bg ember-view"><!----></div>
+
+</div>
+
+<span id="ember1007" class="ember-view"><!----></span>
+<!----><span id="ember1008" class="ember-view"><!----></span>
+
+<div data-keyboard="false" id="discourse-modal" class="hidden modal d-modal fixed-modal ember-view"><div class="modal-outer-container">
+  <div class="modal-middle-container">
+    <div class="modal-inner-container">
+      <div class="modal-header">
+        <div class="modal-close">
+          <a class="close" data-ember-action="" data-ember-action-1015="1015"><i class="fa fa-times d-icon d-icon-times"></i></a>
+        </div>
+
+        <h3></h3>
+      </div>
+
+      <div id="modal-alert"></div>
+
+
+  <div id="ember1044" class="ember-view"></div>
+
+
+
+
+<!---->    </div>
+  </div>
+</div>
+</div>
+<div id="topic-entrance" class="hidden ember-view"><button id="ember1022" class="full jump-top btn no-text ember-view"><!---->
+<!---->
+  <i class="fa fa-caret-up d-icon d-icon-caret-up"></i> Invalid date
+
+</button>
+<button id="ember1023" class="full jump-bottom btn no-text ember-view"><!---->
+<!---->
+  Invalid date <i class="fa fa-caret-down d-icon d-icon-caret-down"></i>
+
+</button></div>
+<div id="reply-control" class="closed show-preview ember-view processed"><div class="grippie"></div>
+<!---->
+</div>
+</div></section>
+
+    <div id="offscreen-content">
+    </div>
+
+      <form id="hidden-login-form" method="post" action="/login" style="display: none;">
+        <input name="username" id="signin_username" type="text">
+        <input name="password" id="signin_password" type="password">
+        <input name="redirect" type="hidden">
+        <input id="signin-button" value="Log In" type="submit">
+      </form>
+
+      <script>
+      (function() {
+        var ps = require('preload-store').default;
+          ps.store("site", {"default_archetype":"regular","notification_types":{"mentioned":1,"replied":2,"quoted":3,"edited":4,"liked":5,"private_message":6,"invited_to_private_message":7,"invitee_accepted":8,"posted":9,"moved_post":10,"linked":11,"granted_badge":12,"invited_to_topic":13,"custom":14,"group_mentioned":15,"group_message_summary":16,"watching_first_post":17,"topic_reminder":18},"post_types":{"regular":1,"moderator_action":2,"small_action":3,"whisper":4},"groups":[{"id":1,"name":"admins"},{"id":0,"name":"everyone"},{"id":2,"name":"moderators"},{"id":3,"name":"staff"},{"id":10,"name":"trust_level_0"},{"id":11,"name":"trust_level_1"},{"id":12,"name":"trust_level_2"},{"id":13,"name":"trust_level_3"},{"id":14,"name":"trust_level_4"}],"filters":["latest","unread","new","read","posted","bookmarks","votes"],"periods":["all","yearly","quarterly","monthly","weekly","daily"],"top_menu_items":["latest","unread","new","read","posted","bookmarks","category","categories","top","votes"],"anonymous_top_menu_items":["latest","top","categories","category","categories","top","votes"],"uncategorized_category_id":13,"is_readonly":false,"disabled_plugins":["discourse-chat-integration"],"user_field_max_length":2048,"suppressed_from_latest_category_ids":[],"post_action_types":[{"id":1,"name_key":"bookmark","name":"Bookmark","description":"Bookmark this post","short_description":"Bookmark this post","long_form":"bookmarked this post","is_flag":false,"is_custom_flag":false},{"id":2,"name_key":"like","name":"Like","description":"Like this post","short_description":"Like this post","long_form":"liked this","is_flag":false,"is_custom_flag":false},{"id":5,"name_key":"vote","name":"Vote","description":"Vote for this post","short_description":"Vote for this post","long_form":"voted for this post","is_flag":false,"is_custom_flag":false},{"id":3,"name_key":"off_topic","name":"Off-Topic","description":"This post is not relevant to the current discussion as defined by the title and first post, and should probably be moved elsewhere.","short_description":"Not relevant to the discussion","long_form":"flagged this as off-topic","is_flag":true,"is_custom_flag":false},{"id":4,"name_key":"inappropriate","name":"Inappropriate","description":"This post contains content that a reasonable person would consider offensive, abusive, or a violation of \u003ca href=\"/guidelines\"\u003eour community guidelines\u003c/a\u003e.","short_description":"A violation of \u003ca href=\"/guidelines\"\u003eour community guidelines\u003c/a\u003e","long_form":"flagged this as inappropriate","is_flag":true,"is_custom_flag":false},{"id":8,"name_key":"spam","name":"Spam","description":"This post is an advertisement, or vandalism. It is not useful or relevant to the current topic.","short_description":"This is an advertisement or vandalism","long_form":"flagged this as spam","is_flag":true,"is_custom_flag":false},{"id":6,"name_key":"notify_user","name":"Send @{{username}} a message","description":"I want to talk to this person directly and personally about their post.","short_description":"I want to talk to this person directly and personally about their post.","long_form":"messaged user","is_flag":true,"is_custom_flag":true},{"id":7,"name_key":"notify_moderators","name":"Something Else","description":"This post requires staff attention for another reason not listed above.","short_description":"Requires staff attention for another reason","long_form":"flagged this for staff attention","is_flag":true,"is_custom_flag":true}],"topic_flag_types":[{"id":4,"name_key":"inappropriate","name":"Inappropriate","description":"This topic contains content that a reasonable person would consider offensive, abusive, or a violation of \u003ca href=\"/guidelines\"\u003eour community guidelines\u003c/a\u003e.","short_description":"translation missing: en.topic_flag_types.inappropriate.short_description","long_form":"flagged this as inappropriate","is_flag":true,"is_custom_flag":false},{"id":8,"name_key":"spam","name":"Spam","description":"This topic is an advertisement. It is not useful or relevant to this site, but promotional in nature.","short_description":"translation missing: en.topic_flag_types.spam.short_description","long_form":"flagged this as spam","is_flag":true,"is_custom_flag":false},{"id":7,"name_key":"notify_moderators","name":"Something Else","description":"This topic requires general staff attention based on the \u003ca href=\"/guidelines\"\u003eguidelines\u003c/a\u003e, \u003ca href=\"/tos\"\u003eTOS\u003c/a\u003e, or for another reason not listed above.","short_description":"translation missing: en.topic_flag_types.notify_moderators.short_description","long_form":"flagged this for moderator attention","is_flag":true,"is_custom_flag":true}],"can_create_tag":null,"can_tag_topics":null,"can_tag_pms":false,"tags_filter_regexp":"[/\\?#\\[\\]@!\\$\u0026'\\(\\)\\*\\+,;=\\.%\\\\`^\\s|\\{\\}\"\u003c\u003e]+","top_tags":["art","code","testing"],"topic_featured_link_allowed_category_ids":[2,3,5,6,7,9,10,11,8,12,13,1,4],"user_themes":[{"theme_key":"2dfa1e18-5ddb-48da-9f58-385d6af0da8c","name":"Try Style Apr2017","default":true}],"censored_words":"","categories":[{"id":13,"name":"uncategorized","color":"AB9364","text_color":"FFFFFF","slug":"uncategorized","topic_count":10,"post_count":1057,"position":1,"description":"Topics that don't need a category, or don't fit into any other existing category.","description_text":"","topic_url":"/t/","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":1,"name":"discourse","color":"00B355","text_color":"FFFFFF","slug":"discourse","topic_count":12,"post_count":46,"position":1,"description":"Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design.","description_text":"Topics about the Discourse forum software itself: how it works, how to use it, discussion about culture, UI, and design.","topic_url":"/t/category-definition-for-discourse/10","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":2,"name":"tech","color":"444","text_color":"FFFFFF","slug":"tech","topic_count":3,"post_count":13,"position":2,"description":"Topics about technology: computers, gadgets, phones, cameras, the Intertubes, or any other IT aspects of the world.","description_text":"Topics about technology: computers, gadgets, phones, cameras, the Intertubes, or any other IT aspects of the world.","topic_url":"/t/category-definition-for-tech/11","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":3,"name":"pics","color":"FF69B4","text_color":"FFFFFF","slug":"pics","topic_count":0,"post_count":1,"position":3,"description":"Topics about pictures, either animated GIFs or other images found online, or photography by yourself or others.","description_text":"Topics about pictures, either animated GIFs or other images found online, or photography by yourself or others.","topic_url":"/t/category-definition-for-pics/12","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":4,"name":"videos","color":"258af1","text_color":"FFFFFF","slug":"videos","topic_count":5,"post_count":32,"position":4,"description":"Topics about any aspect of online video. Discussions about movies and TV should be in the Movies category.","description_text":"Topics about any aspect of online video. Discussions about movies and TV should be in the Movies category.","topic_url":"/t/category-definition-for-videos/13","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":5,"name":"general","color":"70a0C0","text_color":"FFFFFF","slug":"general","topic_count":3,"post_count":15,"position":5,"description":"General discussion topics not specifically fitting any other category. If you're not sure what to pick, either select no category at all, or use this one!","description_text":"General discussion topics not specifically fitting any other category. If you're not sure what to pick, either select no category at all, or use this one!","topic_url":"/t/category-definition-for-general/41","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":6,"name":"gaming","color":"800080","text_color":"FFFFFF","slug":"gaming","topic_count":5,"post_count":24,"position":6,"description":"Topics about gaming of any kind: videogames, board games, card games, role playing games, you name it.","description_text":"Topics about gaming of any kind: videogames, board games, card games, role playing games, you name it.","topic_url":"/t/category-definition-for-gaming/42","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":7,"name":"music","color":"DAA520","text_color":"FFFFFF","slug":"music","topic_count":0,"post_count":1,"position":7,"description":"Topics about music, musicians, bands, and songs. Is that freedom rock? Well, turn it up, man!","description_text":"Topics about music, musicians, bands, and songs. Is that freedom rock? Well, turn it up, man!","topic_url":"/t/category-definition-for-music/43","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":8,"name":"movies","color":"B22222","text_color":"FFFFFF","slug":"movies","topic_count":5,"post_count":41,"position":8,"description":"Topics about movies and television, including reviews, news, commentary and other discussion.","description_text":"Topics about movies and television, including reviews, news, commentary and other discussion.","topic_url":"/t/category-definition-for-movies/44","read_restricted":false,"permission":null,"notification_level":1,"topic_template":"I saw: *insert movie title*\n\nI think it was worth: *how many stars* out of 4 stars\n\nReview here:","has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":9,"name":"sports","color":"0000FF","text_color":"FFFFFF","slug":"sports","topic_count":1,"post_count":13,"position":9,"description":"Topics about the wide wide world of sports, professional or amateur, real or fantasy.","description_text":"Topics about the wide wide world of sports, professional or amateur, real or fantasy.","topic_url":"/t/category-definition-for-sports/45","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":10,"name":"school","color":"D2691E","text_color":"FFFFFF","slug":"school","topic_count":1,"post_count":3,"position":10,"description":"Topics about school, learning, and general education. How can you get your pudding if you don't eat any meat?","description_text":"Topics about school, learning, and general education. How can you get your pudding if you don't eat any meat?","topic_url":"/t/category-definition-for-school/46","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null},{"id":11,"name":"pets","color":"F08080","text_color":"FFFFFF","slug":"pets","topic_count":0,"post_count":7,"position":11,"description":"Topics about our furry, scaly, feathery and/or slimy animal friends. That'll do, LOLCat. That'll do.","description_text":"Topics about our furry, scaly, feathery and/or slimy animal friends. That'll do, LOLCat. That'll do.","topic_url":"/t/category-definition-for-pets/47","read_restricted":false,"permission":null,"notification_level":1,"topic_template":null,"has_children":false,"sort_order":null,"sort_ascending":null,"show_subcategory_list":false,"num_featured_topics":3,"default_view":null,"subcategory_list_style":"rows_with_featured_topics","default_top_period":"all","minimum_required_tags":0,"uploaded_logo":null,"uploaded_background":null}],"trust_levels":[{"id":0,"name":"new user"},{"id":1,"name":"basic user"},{"id":2,"name":"member"},{"id":3,"name":"regular"},{"id":4,"name":"leader"}],"archetypes":[{"id":"regular","name":"Regular Topic","options":[]},{"id":"banner","name":"Banner Topic","options":[]}],"user_fields":[]});
+          ps.store("siteSettings", {"title":"Demo","contact_email":"","contact_url":"","logo_url":"","logo_small_url":"https://discourse-cdn.freetls.fastly.net/try/uploads/default/original/1X/31ab311d1052327d152910ec6a8271693608abd5.png","mobile_logo_url":"","favicon_url":"https://discourse-cdn.freetls.fastly.net/try/uploads/default/original/1X/6e1eae9393daef27038c567da08cb5bfdfcdc30a.png","allow_user_locale":true,"support_mixed_text_direction":false,"suggested_topics":5,"track_external_right_clicks":false,"ga_universal_tracking_code":"","ga_universal_domain_name":"auto","gtm_container_id":"","top_menu":"latest|new|unread|top|categories","post_menu":"like-count|like|share|flag|edit|bookmark|delete|admin|reply","post_menu_hidden_items":"flag|bookmark|edit|delete|admin","share_links":"twitter|facebook|email","desktop_category_page_style":"categories_and_latest_topics","category_colors":"BF1E2E|F1592A|F7941D|9EB83B|3AB54A|12A89D|25AAE2|0E76BD|652D90|92278F|ED207B|8C6238|231F20|808281|B3B5B4|283890","category_style":"bullet","enable_mobile_theme":true,"relative_date_duration":30,"fixed_category_positions":false,"fixed_category_positions_on_create":false,"enable_badges":true,"enable_badge_sql":false,"enable_whispers":true,"invite_only":false,"login_required":false,"must_approve_users":false,"enable_local_logins":true,"enable_local_logins_via_email":false,"allow_new_registrations":true,"enable_signup_cta":true,"enable_google_oauth2_logins":true,"enable_yahoo_logins":true,"enable_twitter_logins":true,"enable_instagram_logins":false,"enable_facebook_logins":true,"enable_github_logins":true,"enable_sso":false,"sso_overrides_avatar":false,"min_username_length":3,"max_username_length":20,"min_password_length":10,"min_admin_password_length":15,"logout_redirect":"","full_name_required":false,"enable_names":true,"invites_per_page":40,"delete_user_max_post_age":365,"delete_all_posts_max":15,"show_email_on_profile":false,"prioritize_username_in_ux":true,"enable_user_directory":true,"allow_anonymous_posting":false,"anonymous_posting_min_trust_level":1,"hide_user_profiles_from_public":false,"hide_suspension_reasons":false,"enable_group_directory":true,"min_post_length":20,"min_first_post_length":20,"min_personal_message_post_length":3,"max_post_length":32000,"topic_featured_link_enabled":true,"min_topic_title_length":15,"max_topic_title_length":128,"min_personal_message_title_length":2,"allow_uncategorized_topics":true,"min_title_similar_length":10,"enable_personal_messages":true,"enable_personal_email_messages":false,"edit_history_visible_to_public":true,"delete_removed_posts_after":24,"traditional_markdown_linebreaks":false,"enable_markdown_typographer":true,"enable_markdown_linkify":true,"markdown_linkify_tlds":"com|net|org|io|co|tv|ru|cn|us|uk|me|de|fr|fi|gov","enable_rich_text_paste":true,"suppress_reply_directly_below":true,"suppress_reply_directly_above":true,"max_reply_history":1,"enable_mentions":true,"newuser_max_images":1,"newuser_max_attachments":0,"show_pinned_excerpt_mobile":true,"show_pinned_excerpt_desktop":true,"display_name_on_posts":false,"show_time_gap_days":7,"short_progress_text_threshold":10000,"default_code_lang":"auto","autohighlight_all_code":false,"highlighted_languages":"apache|bash|cs|cpp|css|coffeescript|diff|xml|http|ini|json|java|javascript|makefile|markdown|nginx|objectivec|ruby|perl|php|python|sql|handlebars","enable_emoji":true,"enable_emoji_shortcuts":true,"emoji_set":"twitter","code_formatting_style":"4-spaces-indent","allowed_href_schemes":"","watched_words_regular_expressions":false,"enable_advanced_editor_preview_sync":false,"email_time_window_mins":10,"disable_digest_emails":true,"email_in":false,"disable_emails":false,"bounce_score_threshold":4,"max_image_size_kb":3072,"max_attachment_size_kb":3072,"authorized_extensions":".jpg|.jpeg|.png|.gif|.txt","authorized_extensions_for_staff":"","max_image_width":690,"max_image_height":500,"prevent_anons_from_downloading_files":false,"enable_s3_uploads":false,"allow_profile_backgrounds":true,"allow_uploaded_avatars":true,"allow_animated_avatars":false,"default_avatars":"","external_system_avatars_enabled":true,"external_system_avatars_url":"https://avatars.discourse.org/v2/letter/{first_letter}/{color}/{size}.png","allow_staff_to_upload_any_file_in_pm":true,"tl1_requires_read_posts":30,"tl3_links_no_follow":false,"use_admin_ip_whitelist":false,"allowed_iframes":"https://www.google.com/maps/embed?|https://www.openstreetmap.org/export/embed.html?|https://calendar.google.com/calendar/embed?","max_oneboxes_per_post":50,"flags_default_topics":false,"alert_admins_if_errors_per_minute":0,"alert_admins_if_errors_per_hour":0,"max_prints_per_hour_per_user":5,"enable_long_polling":true,"long_polling_base_url":"/","background_polling_interval":60000,"polling_interval":3000,"anon_polling_interval":15000,"flush_timings_secs":20,"verbose_localization":false,"max_new_topics":500,"tos_url":"","privacy_policy_url":"","faq_url":"","enable_backups":true,"maximum_backups":3,"min_search_term_length":3,"version_checks":false,"suppress_uncategorized_badge":true,"topic_views_heat_low":1000,"topic_views_heat_medium":2000,"topic_views_heat_high":5000,"topic_post_like_heat_low":0.5,"topic_post_like_heat_medium":1.0,"topic_post_like_heat_high":2.0,"history_hours_low":12,"history_hours_medium":24,"history_hours_high":48,"cold_age_days_low":14,"cold_age_days_medium":90,"cold_age_days_high":180,"global_notice":"","show_create_topics_notice":true,"bootstrap_mode_min_users":50,"bootstrap_mode_enabled":false,"automatically_unpin_topics":true,"read_time_word_count":500,"topic_page_title_includes_category":true,"disable_mailing_list_mode":false,"default_topics_automatic_unpin":true,"tagging_enabled":true,"tag_style":"simple","max_tags_per_topic":5,"max_tag_length":20,"min_trust_level_to_tag_topics":0,"max_tag_search_results":5,"show_filter_by_tag":true,"tags_sort_alphabetically":false,"tags_listed_by_group":false,"staff_tags":"","suppress_overlapping_tags_in_list":false,"affiliate_enabled":true,"affiliate_amazon_ca":"","affiliate_amazon_cn":"","affiliate_amazon_co_jp":"","affiliate_amazon_co_uk":"","affiliate_amazon_com":"","affiliate_amazon_com_au":"","affiliate_amazon_com_br":"","affiliate_amazon_com_mx":"","affiliate_amazon_de":"","affiliate_amazon_es":"","affiliate_amazon_fr":"","affiliate_amazon_in":"","affiliate_amazon_it":"","affiliate_amazon_nl":"","affiliate_ldlc_com":"","presence_enabled":true,"discourse_math_enabled":true,"discourse_math_zoom_on_hover":false,"discourse_math_enable_accessibility":false,"solved_enabled":true,"allow_solved_on_all_topics":false,"accept_all_solutions_trust_level":4,"empty_box_on_unsolved":false,"details_enabled":true,"canned_replies_enabled":true,"discourse_narrative_bot_enabled":true,"data_explorer_enabled":true,"staff_notes_enabled":true,"assign_enabled":true,"assigns_user_url_path":"/latest?assigned={username}","assign_locks_flags":true,"flags_require_assign":false,"voting_enabled":true,"voting_show_who_voted":true,"voting_show_votes_on_profile":true,"cakeday_enabled":true,"cakeday_emoji":"cake","cakeday_birthday_enabled":true,"cakeday_birthday_emoji":"birthday","poll_enabled":true,"poll_maximum_options":20,"poll_minimum_trust_level_to_create":1,"spoiler_enabled":true,"available_locales":"[{\"name\":\"اللغة العربية\",\"value\":\"ar\"},{\"name\":\"bosanski jezik\",\"value\":\"bs_BA\"},{\"name\":\"català\",\"value\":\"ca\"},{\"name\":\"čeština\",\"value\":\"cs\"},{\"name\":\"dansk\",\"value\":\"da\"},{\"name\":\"Deutsch\",\"value\":\"de\"},{\"name\":\"ελληνικά\",\"value\":\"el\"},{\"name\":\"English\",\"value\":\"en\"},{\"name\":\"Español\",\"value\":\"es\"},{\"name\":\"eesti\",\"value\":\"et\"},{\"name\":\"فارسی\",\"value\":\"fa_IR\"},{\"name\":\"suomi\",\"value\":\"fi\"},{\"name\":\"Français\",\"value\":\"fr\"},{\"name\":\"galego\",\"value\":\"gl\"},{\"name\":\"עברית\",\"value\":\"he\"},{\"name\":\"Indonesian\",\"value\":\"id\"},{\"name\":\"Italiano\",\"value\":\"it\"},{\"name\":\"日本語\",\"value\":\"ja\"},{\"name\":\"한국어\",\"value\":\"ko\"},{\"name\":\"latviešu valoda\",\"value\":\"lv\"},{\"name\":\"Norsk bokmål\",\"value\":\"nb_NO\"},{\"name\":\"Nederlands\",\"value\":\"nl\"},{\"name\":\"język polski\",\"value\":\"pl_PL\"},{\"name\":\"Português\",\"value\":\"pt\"},{\"name\":\"Português (BR)\",\"value\":\"pt_BR\"},{\"name\":\"limba română\",\"value\":\"ro\"},{\"name\":\"Русский\",\"value\":\"ru\"},{\"name\":\"slovenčina\",\"value\":\"sk\"},{\"name\":\"slovenščina\",\"value\":\"sl\"},{\"name\":\"Shqip\",\"value\":\"sq\"},{\"name\":\"српски језик\",\"value\":\"sr\"},{\"name\":\"svenska\",\"value\":\"sv\"},{\"name\":\"తెలుగు\",\"value\":\"te\"},{\"name\":\"ไทย\",\"value\":\"th\"},{\"name\":\"Türkçe\",\"value\":\"tr_TR\"},{\"name\":\"українська мова\",\"value\":\"uk\"},{\"name\":\"اردو\",\"value\":\"ur\"},{\"name\":\"Việt Nam\",\"value\":\"vi\"},{\"name\":\"中文\",\"value\":\"zh_CN\"},{\"name\":\"中文 (TW)\",\"value\":\"zh_TW\"}]"});
+          ps.store("themeSettings", {});
+          ps.store("customHTML", {"top":"","footer":""});
+          ps.store("banner", {});
+          ps.store("customEmoji", []);
+          ps.store("translationOverrides", {});
+          ps.store("topic_list_latest", {"users":[{"id":15,"username":"samsaffron","avatar_template":"/user_avatar/try.discourse.org/samsaffron/{size}/190_1.png"},{"id":44,"username":"rich","avatar_template":"https://avatars.discourse.org/v2/letter/r/35a633/{size}.png"},{"id":36,"username":"cameronbr","avatar_template":"https://avatars.discourse.org/v2/letter/c/73ab20/{size}.png"},{"id":51,"username":"JaredChung","avatar_template":"/user_avatar/try.discourse.org/jaredchung/{size}/215_1.png"},{"id":68,"username":"erlend_sh","avatar_template":"/user_avatar/try.discourse.org/erlend_sh/{size}/282_1.png"},{"id":124,"username":"vesinhchamclean","avatar_template":"/user_avatar/try.discourse.org/vesinhchamclean/{size}/620_1.png"},{"id":7,"username":"johnsmith","avatar_template":"https://avatars.discourse.org/v2/letter/j/d9b06d/{size}.png"},{"id":22,"username":"clay_7","avatar_template":"/user_avatar/try.discourse.org/clay_7/{size}/194_1.png"},{"id":5,"username":"codinghorror","avatar_template":"/user_avatar/try.discourse.org/codinghorror/{size}/186_1.png"},{"id":70,"username":"mcwumbly","avatar_template":"/user_avatar/try.discourse.org/mcwumbly/{size}/284_1.png"},{"id":120,"username":"Aleksandra_Osinska","avatar_template":"https://avatars.discourse.org/v2/letter/a/87869e/{size}.png"},{"id":117,"username":"testing21","avatar_template":"/user_avatar/try.discourse.org/testing21/{size}/615_1.png"},{"id":82,"username":"haiku","avatar_template":"/user_avatar/try.discourse.org/haiku/{size}/297_1.png"},{"id":84,"username":"Eggs_McLaren","avatar_template":"/user_avatar/try.discourse.org/eggs_mclaren/{size}/357_1.png"},{"id":40,"username":"eviltrout","avatar_template":"/user_avatar/try.discourse.org/eviltrout/{size}/207_1.png"},{"id":34,"username":"Neil","avatar_template":"/user_avatar/try.discourse.org/neil/{size}/203_1.png"},{"id":56,"username":"tms","avatar_template":"https://avatars.discourse.org/v2/letter/t/5f9b8f/{size}.png"},{"id":99,"username":"tinyhands","avatar_template":"/user_avatar/try.discourse.org/tinyhands/{size}/584_1.png"},{"id":31,"username":"daryljames","avatar_template":"https://avatars.discourse.org/v2/letter/d/3da27b/{size}.png"},{"id":23,"username":"stienman","avatar_template":"/user_avatar/try.discourse.org/stienman/{size}/195_1.png"},{"id":25,"username":"Sweetbaby","avatar_template":"/user_avatar/try.discourse.org/sweetbaby/{size}/197_1.png"},{"id":72,"username":"techAPJ","avatar_template":"/user_avatar/try.discourse.org/techapj/{size}/286_1.png"},{"id":79,"username":"rudy","avatar_template":"/user_avatar/try.discourse.org/rudy/{size}/294_1.png"},{"id":77,"username":"BhaelOchon","avatar_template":"/user_avatar/try.discourse.org/bhaelochon/{size}/292_1.png"},{"id":60,"username":"riking27","avatar_template":"/user_avatar/try.discourse.org/riking27/{size}/221_1.png"},{"id":66,"username":"trident","avatar_template":"/user_avatar/try.discourse.org/trident/{size}/280_1.png"},{"id":86,"username":"cpradio","avatar_template":"https://avatars.discourse.org/v2/letter/c/d2c977/{size}.png"},{"id":71,"username":"fantasticfears","avatar_template":"/user_avatar/try.discourse.org/fantasticfears/{size}/285_1.png"},{"id":95,"username":"contrabig","avatar_template":"https://avatars.discourse.org/v2/letter/c/fbc32d/{size}.png"},{"id":4,"username":"marcy","avatar_template":"https://avatars.discourse.org/v2/letter/m/ec9cab/{size}.png"},{"id":37,"username":"neilll","avatar_template":"/user_avatar/try.discourse.org/neilll/{size}/204_1.png"},{"id":48,"username":"gungadin","avatar_template":"https://avatars.discourse.org/v2/letter/g/ecccb3/{size}.png"},{"id":83,"username":"elberet","avatar_template":"/user_avatar/try.discourse.org/elberet/{size}/299_1.png"},{"id":19,"username":"gknauss","avatar_template":"/user_avatar/try.discourse.org/gknauss/{size}/192_1.png"},{"id":26,"username":"Pollyanna","avatar_template":"/user_avatar/try.discourse.org/pollyanna/{size}/198_1.png"},{"id":24,"username":"nsahler","avatar_template":"/user_avatar/try.discourse.org/nsahler/{size}/196_1.png"},{"id":21,"username":"OldSchoolDM","avatar_template":"/user_avatar/try.discourse.org/oldschooldm/{size}/193_1.png"},{"id":33,"username":"hirsuteness","avatar_template":"https://avatars.discourse.org/v2/letter/h/c67d28/{size}.png"},{"id":11,"username":"pekka_gaiser","avatar_template":"/user_avatar/try.discourse.org/pekka_gaiser/{size}/188_1.png"},{"id":6,"username":"wumpus1","avatar_template":"/user_avatar/try.discourse.org/wumpus1/{size}/187_1.png"},{"id":58,"username":"zogstrip","avatar_template":"/user_avatar/try.discourse.org/zogstrip/{size}/220_1.png"},{"id":85,"username":"michael","avatar_template":"/user_avatar/try.discourse.org/michael/{size}/208_1.png"},{"id":52,"username":"Hanzo","avatar_template":"/user_avatar/try.discourse.org/hanzo/{size}/216_1.png"}],"primary_groups":[],"topic_list":{"can_create_topic":false,"more_topics_url":"/latest?no_definitions=true\u0026no_subcategories=false\u0026page=1","draft":null,"draft_key":"new_topic","draft_sequence":null,"per_page":30,"top_tags":["art","code","testing"],"topics":[{"id":57,"title":"Welcome to our demo!","fancy_title":"Welcome to our demo!","slug":"welcome-to-our-demo","posts_count":1,"reply_count":9,"highest_post_number":1,"image_url":null,"created_at":"2013-02-04T20:26:25.977Z","last_posted_at":"2013-02-04T20:26:26.278Z","bumped":true,"bumped_at":"2017-04-20T08:50:10.886Z","unseen":false,"pinned":true,"unpinned":null,"excerpt":"Welcome to our demonstration sandbox! \n\nThis is a safe place to play with Discourse that resets every day. Feel free to experiment, but always be civil and respectful – and don\u0026#39;t post anything here you wouldn\u0026#39;t want lost\u0026hellip;","visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":379,"like_count":2,"has_summary":false,"archetype":"regular","last_poster_username":"samsaffron","category_id":13,"pinned_globally":true,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":"latest single","description":"Original Poster, Most Recent Poster","user_id":15,"primary_group_id":null}]},{"id":97,"title":"What is your favorite TED Video","fancy_title":"What is your favorite TED Video","slug":"what-is-your-favorite-ted-video","posts_count":16,"reply_count":6,"highest_post_number":16,"image_url":null,"created_at":"2013-02-05T02:46:58.194Z","last_posted_at":"2018-04-17T15:57:18.691Z","bumped":true,"bumped_at":"2018-04-17T15:57:18.691Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":263,"like_count":15,"has_summary":false,"archetype":"regular","last_poster_username":"vesinhchamclean","category_id":4,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":44,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":36,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":51,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":68,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":124,"primary_group_id":null}]},{"id":1056,"title":"What is a cripshop? It is like amazon","fancy_title":"What is a cripshop? It is like amazon","slug":"what-is-a-cripshop-it-is-like-amazon","posts_count":1,"reply_count":0,"highest_post_number":1,"image_url":null,"created_at":"2018-04-17T15:54:00.332Z","last_posted_at":"2018-04-17T15:54:00.400Z","bumped":true,"bumped_at":"2018-04-17T15:54:00.400Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":["art"],"views":2,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"vesinhchamclean","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":"latest single","description":"Original Poster, Most Recent Poster","user_id":124,"primary_group_id":null}]},{"id":65,"title":"What do the avatars in the topic list mean?","fancy_title":"What do the avatars in the topic list mean?","slug":"what-do-the-avatars-in-the-topic-list-mean","posts_count":7,"reply_count":6,"highest_post_number":8,"image_url":null,"created_at":"2013-02-04T20:50:41.693Z","last_posted_at":"2018-04-17T13:56:36.970Z","bumped":true,"bumped_at":"2018-04-17T13:56:46.117Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":245,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"Aleksandra_Osinska","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":7,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":22,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":70,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":120,"primary_group_id":null}]},{"id":1048,"title":"21test321446sdfkewrwerqweqweq","fancy_title":"21test321446sdfkewrwerqweqweq","slug":"21test321446sdfkewrwerqweqweq","posts_count":1,"reply_count":0,"highest_post_number":1,"image_url":null,"created_at":"2018-04-17T12:41:02.802Z","last_posted_at":"2018-04-17T12:41:02.899Z","bumped":true,"bumped_at":"2018-04-17T12:49:07.077Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":["testing"],"views":7,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"testing21","category_id":13,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":"latest single","description":"Original Poster, Most Recent Poster","user_id":117,"primary_group_id":null}]},{"id":289,"title":"The Room Appreciation Topic","fancy_title":"The Room Appreciation Topic","slug":"the-room-appreciation-topic","posts_count":6,"reply_count":1,"highest_post_number":6,"image_url":"//upload.wikimedia.org/wikipedia/en/e/e1/TheRoomMovie.jpg","created_at":"2014-08-26T01:16:26.051Z","last_posted_at":"2018-01-08T06:50:07.903Z","bumped":true,"bumped_at":"2018-01-08T06:50:07.903Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":295,"like_count":4,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":8,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":82,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":84,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":40,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":34,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":60,"title":"What's that thing under the first post?","fancy_title":"What\u0026rsquo;s that thing under the first post?","slug":"whats-that-thing-under-the-first-post","posts_count":3,"reply_count":3,"highest_post_number":3,"image_url":null,"created_at":"2013-02-04T20:31:41.934Z","last_posted_at":"2013-02-05T18:05:42.364Z","bumped":true,"bumped_at":"2016-03-22T15:25:50.371Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":238,"like_count":2,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":7,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":36,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":51,"title":"How do I reply to folks here?","fancy_title":"How do I reply to folks here?","slug":"how-do-i-reply-to-folks-here","posts_count":5,"reply_count":4,"highest_post_number":5,"image_url":null,"created_at":"2013-02-04T20:00:06.741Z","last_posted_at":"2015-11-05T16:11:18.232Z","bumped":true,"bumped_at":"2016-03-21T16:33:27.712Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":241,"like_count":4,"has_summary":false,"archetype":"regular","last_poster_username":"tinyhands","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":7,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":56,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":99,"primary_group_id":null}]},{"id":61,"title":"Is there a Markdown or BBCode reference?","fancy_title":"Is there a Markdown or BBCode reference?","slug":"is-there-a-markdown-or-bbcode-reference","posts_count":2,"reply_count":0,"highest_post_number":2,"image_url":null,"created_at":"2013-02-04T20:33:42.775Z","last_posted_at":"2013-02-05T18:34:39.484Z","bumped":true,"bumped_at":"2016-01-16T11:19:00.876Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":229,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":7,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":77,"title":"Whoa. Check out this crazy paper artwork","fancy_title":"Whoa. Check out this crazy paper artwork","slug":"whoa-check-out-this-crazy-paper-artwork","posts_count":4,"reply_count":0,"highest_post_number":4,"image_url":"//cdn.discourse.org/business/images/emoji/emoji_one/cool.png?v=0","created_at":"2013-02-05T00:50:15.710Z","last_posted_at":"2014-08-26T17:55:49.478Z","bumped":true,"bumped_at":"2015-09-24T23:43:20.223Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":["art"],"views":247,"like_count":12,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":5,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":31,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":23,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":25,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":287,"title":"Recommend a great YouTube video","fancy_title":"Recommend a great YouTube video","slug":"recommend-a-great-youtube-video","posts_count":5,"reply_count":2,"highest_post_number":5,"image_url":null,"created_at":"2014-08-24T15:23:47.913Z","last_posted_at":"2014-08-26T16:41:27.749Z","bumped":true,"bumped_at":"2015-09-24T23:31:39.100Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":241,"like_count":10,"has_summary":false,"archetype":"regular","last_poster_username":"riking27","category_id":4,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":72,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":79,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":77,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":60,"primary_group_id":null}]},{"id":54,"title":"Can I log in with Google and a forum log in too?","fancy_title":"Can I log in with Google and a forum log in too?","slug":"can-i-log-in-with-google-and-a-forum-log-in-too","posts_count":4,"reply_count":2,"highest_post_number":4,"image_url":null,"created_at":"2013-02-04T20:06:51.502Z","last_posted_at":"2013-02-05T18:23:49.514Z","bumped":true,"bumped_at":"2015-09-24T23:21:09.944Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":205,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":7,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":23,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":258,"title":"What's the coolest thing you have worked on?","fancy_title":"What\u0026rsquo;s the coolest thing you have worked on?","slug":"whats-the-coolest-thing-you-have-worked-on","posts_count":4,"reply_count":0,"highest_post_number":4,"image_url":"https://discourse-cdn.freetls.fastly.net/try/uploads/default/optimized/1X/32d15eafddfbd65fedbcd0fdb9c4503e60e52a56_1_690x388.jpg","created_at":"2014-08-19T20:59:20.770Z","last_posted_at":"2015-09-24T23:12:08.585Z","bumped":true,"bumped_at":"2015-09-24T23:12:08.585Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":211,"like_count":6,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":13,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":66,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":86,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":77,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":55,"title":"Can I find stuff while writing replies?","fancy_title":"Can I find stuff while writing replies?","slug":"can-i-find-stuff-while-writing-replies","posts_count":3,"reply_count":0,"highest_post_number":3,"image_url":null,"created_at":"2013-02-04T20:14:00.162Z","last_posted_at":"2013-02-05T17:46:26.172Z","bumped":true,"bumped_at":"2015-09-24T23:05:39.392Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":213,"like_count":2,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":7,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":36,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":325,"title":"How can I make a post Wiki?","fancy_title":"How can I make a post Wiki?","slug":"how-can-i-make-a-post-wiki","posts_count":2,"reply_count":0,"highest_post_number":2,"image_url":"https://discourse-cdn.freetls.fastly.net/try/uploads/default/optimized/1X/7f560af3b9017d46d4abdcd5c5ff08ecb0ba4fb5_1_690x151.png","created_at":"2015-09-24T14:24:22.361Z","last_posted_at":"2015-09-24T14:24:39.368Z","bumped":true,"bumped_at":"2015-09-24T23:02:01.634Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":88,"like_count":2,"has_summary":false,"archetype":"regular","last_poster_username":"techAPJ","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":"latest single","description":"Original Poster, Most Recent Poster","user_id":72,"primary_group_id":null}]},{"id":276,"title":"What is a onebox?","fancy_title":"What is a onebox?","slug":"what-is-a-onebox","posts_count":11,"reply_count":3,"highest_post_number":11,"image_url":"https://meta-s3-cdn.freetls.fastly.net/original/3X/c/b/cb4bec8901221d4a646e45e1fa03db3a65e17f59.png","created_at":"2014-08-21T13:52:57.709Z","last_posted_at":"2014-08-26T18:54:21.057Z","bumped":true,"bumped_at":"2015-07-05T00:13:45.977Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":337,"like_count":6,"has_summary":false,"archetype":"regular","last_poster_username":"cpradio","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":72,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":23,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":40,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":86,"primary_group_id":null}]},{"id":267,"title":"Favorite TV show scene?","fancy_title":"Favorite TV show scene?","slug":"favorite-tv-show-scene","posts_count":6,"reply_count":0,"highest_post_number":6,"image_url":"https://www.hollywoodreporter.com/assets/1511301066//preta/favicon.ico?eb7d7616889e733fa15b","created_at":"2014-08-21T02:28:22.497Z","last_posted_at":"2015-06-08T20:28:15.244Z","bumped":true,"bumped_at":"2015-06-08T20:28:15.244Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":249,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"contrabig","category_id":4,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":71,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":70,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":66,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":72,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":95,"primary_group_id":null}]},{"id":291,"title":"Is the Second Amendment still relevant today?","fancy_title":"Is the Second Amendment still relevant today?","slug":"is-the-second-amendment-still-relevant-today","posts_count":22,"reply_count":15,"highest_post_number":22,"image_url":null,"created_at":"2014-08-26T08:41:59.851Z","last_posted_at":"2014-08-26T09:00:45.431Z","bumped":true,"bumped_at":"2015-05-06T12:02:32.896Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":125,"like_count":3,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":13,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":4,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":40,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":37,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":48,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":304,"title":"What methods/books did you use to learn Ruby?","fancy_title":"What methods/books did you use to learn Ruby?","slug":"what-methods-books-did-you-use-to-learn-ruby","posts_count":5,"reply_count":2,"highest_post_number":5,"image_url":null,"created_at":"2014-08-26T18:28:36.599Z","last_posted_at":"2014-08-28T23:13:23.231Z","bumped":true,"bumped_at":"2014-08-28T23:13:23.231Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":["code"],"views":205,"like_count":3,"has_summary":false,"archetype":"regular","last_poster_username":"elberet","category_id":2,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":86,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":70,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":84,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":83,"primary_group_id":null}]},{"id":284,"title":"Poll: What's your preferred mobile OS?","fancy_title":"Poll: What\u0026rsquo;s your preferred mobile OS?","slug":"poll-whats-your-preferred-mobile-os","posts_count":3,"reply_count":0,"highest_post_number":3,"image_url":null,"created_at":"2014-08-24T13:54:41.697Z","last_posted_at":"2014-08-27T18:32:54.323Z","bumped":true,"bumped_at":"2014-08-27T18:32:54.323Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":207,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"BhaelOchon","category_id":2,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":72,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":86,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":77,"primary_group_id":null}]},{"id":48,"title":"A bear, however hard he tries, grows tubby without exercise","fancy_title":"A bear, however hard he tries, grows tubby without exercise","slug":"a-bear-however-hard-he-tries-grows-tubby-without-exercise","posts_count":6,"reply_count":3,"highest_post_number":6,"image_url":null,"created_at":"2013-02-04T19:38:46.480Z","last_posted_at":"2014-08-27T06:40:50.138Z","bumped":true,"bumped_at":"2014-08-27T06:40:50.138Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":228,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"Eggs_McLaren","category_id":5,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":23,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":22,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":19,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":84,"primary_group_id":null}]},{"id":67,"title":"MLP:FIM Season 3 (spoilers ahoy!)","fancy_title":"MLP:FIM Season 3 (spoilers ahoy!)","slug":"mlp-fim-season-3-spoilers-ahoy","posts_count":5,"reply_count":1,"highest_post_number":5,"image_url":"/uploads/default/107/963b92d8ef871cfb.png","created_at":"2013-02-04T21:17:54.225Z","last_posted_at":"2013-02-05T18:17:54.119Z","bumped":true,"bumped_at":"2014-08-27T06:10:28.743Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":209,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"OldSchoolDM","category_id":5,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":26,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":24,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":25,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":21,"primary_group_id":null}]},{"id":81,"title":"Impressions Games City Builders","fancy_title":"Impressions Games City Builders","slug":"impressions-games-city-builders","posts_count":4,"reply_count":1,"highest_post_number":4,"image_url":"//upload.wikimedia.org/wikipedia/en/thumb/5/56/Caeser_III_Coverart.jpg/220px-Caeser_III_Coverart.jpg","created_at":"2013-02-05T01:08:22.671Z","last_posted_at":"2014-08-26T23:08:33.318Z","bumped":true,"bumped_at":"2014-08-26T23:08:33.318Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":217,"like_count":4,"has_summary":false,"archetype":"regular","last_poster_username":"elberet","category_id":6,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":33,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":36,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":83,"primary_group_id":null}]},{"id":25,"title":"Do you use a mobile device for ALL your work? Tell me how!","fancy_title":"Do you use a mobile device for ALL your work? Tell me how!","slug":"do-you-use-a-mobile-device-for-all-your-work-tell-me-how","posts_count":5,"reply_count":0,"highest_post_number":5,"image_url":"http://try2.discourse.org/uploads/default/7/blob.png","created_at":"2013-01-31T21:04:37.420Z","last_posted_at":"2014-08-26T18:43:44.165Z","bumped":true,"bumped_at":"2014-08-26T18:43:44.165Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":238,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"mcwumbly","category_id":2,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":11,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":25,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":24,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":70,"primary_group_id":null}]},{"id":302,"title":"How do I add pictures to a post?","fancy_title":"How do I add pictures to a post?","slug":"how-do-i-add-pictures-to-a-post","posts_count":5,"reply_count":0,"highest_post_number":5,"image_url":null,"created_at":"2014-08-26T17:08:39.428Z","last_posted_at":"2014-08-26T18:34:39.355Z","bumped":true,"bumped_at":"2014-08-26T18:34:39.355Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":302,"like_count":5,"has_summary":false,"archetype":"regular","last_poster_username":"mcwumbly","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":84,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":86,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":70,"primary_group_id":null}]},{"id":123,"title":"Can I upload attachments?","fancy_title":"Can I upload attachments?","slug":"can-i-upload-attachments","posts_count":4,"reply_count":3,"highest_post_number":5,"image_url":null,"created_at":"2013-07-22T23:27:14.818Z","last_posted_at":"2014-08-26T17:26:55.037Z","bumped":true,"bumped_at":"2014-08-26T17:26:55.037Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":233,"like_count":0,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":1,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":5,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":6,"primary_group_id":null}]},{"id":301,"title":"What happens when a topic has over 1000 replies?","fancy_title":"What happens when a topic has over 1000 replies?","slug":"what-happens-when-a-topic-has-over-1000-replies","posts_count":1000,"reply_count":0,"highest_post_number":1000,"image_url":null,"created_at":"2014-08-26T17:04:41.811Z","last_posted_at":"2014-08-26T17:07:30.819Z","bumped":true,"bumped_at":"2014-08-26T17:07:30.819Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":246,"like_count":1,"has_summary":true,"archetype":"regular","last_poster_username":"zogstrip","category_id":13,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":34,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":82,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":40,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":58,"primary_group_id":null}]},{"id":264,"title":"What's your all-time favorite movie scene?","fancy_title":"What\u0026rsquo;s your all-time favorite movie scene?","slug":"whats-your-all-time-favorite-movie-scene","posts_count":10,"reply_count":0,"highest_post_number":10,"image_url":null,"created_at":"2014-08-20T11:37:35.395Z","last_posted_at":"2014-08-26T16:59:21.842Z","bumped":true,"bumped_at":"2014-08-26T16:59:21.842Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":958,"like_count":8,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":8,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":72,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":79,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":60,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":82,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]},{"id":278,"title":"Recommended reading for Community and FOSS enthusiasts","fancy_title":"Recommended reading for Community and FOSS enthusiasts","slug":"recommended-reading-for-community-and-foss-enthusiasts","posts_count":6,"reply_count":1,"highest_post_number":6,"image_url":null,"created_at":"2014-08-21T17:49:33.539Z","last_posted_at":"2014-08-26T13:15:00.332Z","bumped":true,"bumped_at":"2014-08-26T16:52:39.832Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":639,"like_count":4,"has_summary":false,"archetype":"regular","last_poster_username":"erlend_sh","category_id":13,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":"latest","description":"Original Poster, Most Recent Poster","user_id":68,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":5,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":84,"primary_group_id":null}]},{"id":299,"title":"Enjoyable children’s shows for adults","fancy_title":"Enjoyable children’s shows for adults","slug":"enjoyable-children-s-shows-for-adults","posts_count":8,"reply_count":2,"highest_post_number":8,"image_url":"//upload.wikimedia.org/wikipedia/en/thumb/6/6e/Phineas_and_Ferb_logo.svg/250px-Phineas_and_Ferb_logo.svg.png","created_at":"2014-08-26T16:27:08.055Z","last_posted_at":"2014-08-26T16:50:13.855Z","bumped":true,"bumped_at":"2014-08-26T16:50:13.855Z","unseen":false,"pinned":false,"unpinned":null,"visible":true,"closed":false,"archived":false,"bookmarked":null,"liked":null,"tags":[],"views":198,"like_count":2,"has_summary":false,"archetype":"regular","last_poster_username":"codinghorror","category_id":8,"pinned_globally":false,"featured_link":null,"has_accepted_answer":false,"vote_count":null,"can_vote":false,"user_voted":null,"posters":[{"extras":null,"description":"Original Poster","user_id":85,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":15,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":25,"primary_group_id":null},{"extras":null,"description":"Frequent Poster","user_id":52,"primary_group_id":null},{"extras":"latest","description":"Most Recent Poster","user_id":5,"primary_group_id":null}]}]}});
+      })();
+      </script>
+
+
+
+    <script>
+  Ember.RSVP.configure('onerror', function(e) {
+    // Ignore TransitionAborted exceptions that bubble up
+    if (e && e.message === "TransitionAborted") { return; }
+
+    window.onerror(e && e.message, null,null,null,e);
+  });
+</script>
+
+<script>
+
+  (function() {
+    var ps = require('preload-store').default;
+
+    Discourse.CDN = 'https://discourse-cdn.freetls.fastly.net/try';
+    Discourse.BaseUrl = 'try.discourse.org'.replace(/:[\d]*$/,"");
+    Discourse.BaseUri = '';
+    Discourse.Environment = 'production';
+    Discourse.SiteSettings = ps.get('siteSettings');
+    Discourse.ThemeSettings = ps.get('themeSettings');
+    Discourse.LetterAvatarVersion = '5_1887921562df0dabfae55079ddabeb03';
+    Discourse.MarkdownItURL = 'https://discourse-cdn.freetls.fastly.net/try/assets/markdown-it-bundle-2816f2a3e9a10b723d3f796361bcc6aa75fcd362988118e8532bf17b60f5f0d1.js';
+    Discourse.ServiceWorkerURL = Discourse.Environment != "development" ? 'service-worker-49bb49a79c0c56d327e5dc0c32ba4b6469a79f13f05a5e174c02f8cb5b1df7b3.js' : 'service-worker.js';
+    I18n.defaultLocale = 'en';
+    Discourse.start();
+    Discourse.set('assetVersion','3f4f884b3980ea779b70bc292a841886');
+    Discourse.Session.currentProp("disableCustomCSS", false);
+    Discourse.HighlightJSPath = "/highlight-js/try.discourse.org/100444ceef8ca161334f64d3ce49fe7a1556f943.js";
+  })();
+</script>
+
+<link rel="preload" href="demo_files/browser-update-f57286e74ddbc53aa899689b01ef467078911e4138050c.js" as="script">
+<script src="demo_files/browser-update-f57286e74ddbc53aa899689b01ef467078911e4138050c.js"></script>
+
+
+
+
+
+
+</body></html>
